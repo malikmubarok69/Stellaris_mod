@@ -1,0 +1,235 @@
+##################
+### TECH COSTS ###
+##################
+#If you change any of these, use replace in files so the values are the same across all files
+
+@tier1cost1 = 240
+@tier1cost2 = 360
+@tier1cost3 = 480
+@tier1cost4 = 600
+
+@tier2cost1 = 900
+@tier2cost2 = 1200
+@tier2cost3 = 1500
+@tier2cost4 = 1800
+
+@tier3cost1 = 2320
+@tier3cost2 = 2840
+@tier3cost3 = 3360
+@tier3cost4 = 3880
+
+@tier4cost1 = 4320
+@tier4cost2 = 4840
+@tier4cost3 = 5320
+@tier4cost4 = 5840
+
+####################
+### TECH WEIGHTS ###
+####################
+
+@tier1weight1 = 100
+@tier1weight2 = 95
+@tier1weight3 = 90
+@tier1weight4 = 85
+
+@tier2weight1 = 75
+@tier2weight2 = 70
+@tier2weight3 = 65
+@tier2weight4 = 60
+
+@tier3weight1 = 50
+@tier3weight2 = 45
+@tier3weight3 = 40
+@tier3weight4 = 18
+
+#Crystallis Zero-Point Reactor VI
+tech_c_reactor_6 = {
+	area = physics
+	cost = @tier3cost4
+	tier = 3
+	is_rare = yes
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_zero_point_power" }
+	weight = @tier3weight4
+	
+	modifier = {
+		max_energy = 500
+	}
+	
+	weight_modifier = {
+		factor = 1.5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 6 #important component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+#Crystallis Zero-Point Reactor VII
+tech_c_reactor_7 = {
+	area = physics
+	cost = @tier4cost1
+	tier = 3
+	is_rare = yes
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_c_reactor_6" }
+	weight = @tier3weight4
+	
+	modifier = {
+		max_energy = 1000
+	}
+	
+	weight_modifier = {
+		factor = 1.5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 6 #important component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+#Crystallis Zero-Point Reactor VIII
+tech_c_reactor_8 = {
+	area = physics
+	cost = @tier4cost2
+	tier = 3
+	is_rare = yes
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_c_reactor_7" }
+	weight = @tier3weight4
+	
+	modifier = {
+		max_energy = 1500
+	}
+	
+	weight_modifier = {
+		factor = 1.5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 6 #important component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+#Crystallis Zero-Point Reactor IX
+tech_c_reactor_9 = {
+	area = physics
+	cost = @tier4cost3
+	tier = 3
+	is_rare = yes
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_c_reactor_8" }
+	weight = @tier3weight4
+	
+	modifier = {
+		max_energy = 2000
+	}
+	
+	weight_modifier = {
+		factor = 1.5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 6 #important component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+#Crystallis Zero-Point Reactor X
+tech_c_reactor_10 = {
+	area = physics
+	cost = @tier4cost4
+	tier = 3
+	is_rare = yes
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_c_reactor_9" }
+	weight = @tier3weight4
+	
+	is_reverse_engineerable = no
+	
+	modifier = {
+		max_energy = 2500
+	}
+	
+	weight_modifier = {
+		factor = 1.5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 6 #important component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}

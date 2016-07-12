@@ -1,0 +1,417 @@
+building_ice_factory = {
+	base_buildtime = 360
+	planet_unique = yes
+
+	cost = {
+		minerals = 50
+		energy = 100
+	}
+	
+	required_resources = {
+		energy = 1
+		sr_h2o = 5
+	}
+	
+	produced_resources = {
+		sr_ice = 6
+	}
+}
+
+building_spice_harvester = {
+	base_buildtime = 360
+	
+	cost = {
+		minerals = 100
+		energy = 200
+		influence = 10
+	}
+	
+	potential = {
+		planet = {
+			is_planet_class = pc_desert
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requirement_sandworm_activity"
+			tile = {
+				any_neighboring_tile = {
+					has_blocker = "tb_sandworm_activity"
+				}
+			}
+		}
+	}
+	
+	required_resources = {
+		energy = 3
+		sr_h2o = 1
+	}
+	
+	produced_resources = {
+		sr_wormspice = 1
+	}
+	
+	prerequisites = {
+		"tech_desert_colonization"
+	}	
+}
+
+building_bio_medical = {
+	base_buildtime = 210
+	
+	cost = {
+		minerals = 75
+		energy = 50
+	}
+	
+	required_resources = {
+		energy = 1
+		sr_h2o = 2
+		sr_biomass = 1
+	}
+	
+	produced_resources = {
+		society_research = 3
+		sr_medicals = 1
+	}
+	
+	potential = {
+		tile = {
+			any_neighboring_tile = {
+				OR = {
+					has_blocker = "tb_dangerous_wildlife"
+					has_blocker = "tb_dense_jungle"
+					has_blocker = "tb_noxious_swamp"
+					has_blocker = "tb_toxic_kelp"
+				}
+			}
+		}
+	}
+	
+	prerequisites = {
+		"tech_frontier_health"
+	}
+}
+
+building_water_excavator = {
+	base_buildtime = 180
+	
+	cost = {
+		minerals = 50
+		energy = 25
+	}
+	
+	required_resources = {
+		energy = 1
+	}
+	
+	produced_resources = {
+		minerals = 1
+		sr_h2o = 2
+	}
+	
+	adjacency_bonus = {
+		resource_food_add = 1
+	}
+	
+	potential = {
+		planet = {
+			NOT = {
+				is_planet_class = pc_tropical
+				is_planet_class = pc_ocean
+				is_planet_class = pc_arctic
+				is_planet_class = pc_desert
+				is_planet_class = pc_asteroid
+				is_planet_class = pc_barren
+			}
+		}
+	}
+}
+
+building_moisture_farm = {
+	base_buildtime = 180
+	
+	cost = {
+		minerals = 25
+		energy = 25
+	}
+	
+	produced_resources = {
+		sr_h2o = 2
+		energy = 1
+	}
+	
+	potential = {
+		planet = {
+			OR = {
+				is_planet_class = pc_desert
+				is_planet_class = pc_arid
+			}
+		}
+	}
+	
+	prerequisites = {
+		"tech_desert_colonization"
+	}
+}
+
+building_terraformer_producer = {
+	base_buildtime = 360
+	planet_unique = yes
+	
+	cost = {
+		minerals = 200
+		energy = 300
+		influence = 25
+	}
+
+	produced_resources = {
+		sr_terraform_liquids = 1
+		sr_terraform_gases = 1
+	}
+	
+	required_resources = {
+		energy = 4
+		sr_ice = 3
+		sr_natural_fuels = 3
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requirement_adjacent_refinery_2"
+			tile = {
+				any_neighboring_tile = {
+					has_building = "building_fuel_refinery_2"
+				}
+			}
+		}		
+	}
+	
+	prerequisites = {
+		"tech_terrestrial_sculpting"
+	}
+	
+	ai_special_building = yes
+}
+
+building_reservoir = {
+	base_buildtime = 180
+	
+	cost = {
+		minerals = 90
+		energy = 25
+	}
+	
+	upgrades = {
+		building_reservoir_2
+	}
+	
+	produced_resources = {
+		sr_h2o = 1
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requirement_has_water"
+			tile = {
+				OR = {
+					has_deposit = "d_food_with_water_deposit"
+					has_deposit = "d_energy_in_water_deposit"
+					has_deposit = "d_minerals_in_water_deposit"
+					has_deposit = "d_h2o_deposit"
+					has_deposit = "d_rich_h2o_deposit"
+					has_deposit = "d_vast_h2o_deposit"
+					has_deposit = "d_immense_h2o_deposit"
+				}
+			}
+		}		
+	}
+	
+	adjacency_bonus = {
+		resource_food_add = 1
+	}
+	
+	planet_modifier = {
+		pop_happiness = 0.01
+	}
+}
+
+building_reservoir_2 = {
+	base_buildtime = 210
+	is_listed = no
+	
+	cost = {
+		minerals = 120
+		energy = 40
+	}
+	
+	produced_resources = {
+		sr_h2o = 2
+	}
+	
+	prerequisites = {
+		"tech_mining_network_2"
+	}
+	
+	upgrades = {
+		building_reservoir_3
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requirement_has_water"
+			tile = {
+				OR = {
+					has_deposit = "d_food_with_water_deposit"
+					has_deposit = "d_energy_in_water_deposit"
+					has_deposit = "d_minerals_in_water_deposit"
+					has_deposit = "d_h2o_deposit"
+					has_deposit = "d_rich_h2o_deposit"
+					has_deposit = "d_vast_h2o_deposit"
+					has_deposit = "d_immense_h2o_deposit"
+				}
+			}
+		}		
+	}
+
+	adjacency_bonus = {
+		resource_food_add = 1.5
+	}
+	
+	planet_modifier = {
+		pop_happiness = 0.03
+	}
+}
+
+building_reservoir_3 = {
+	base_buildtime = 240
+	is_listed = no
+	
+	cost = {
+		minerals = 150
+		energy = 50
+	}
+	
+	produced_resources = {
+		sr_h2o = 3
+	}
+	
+	prerequisites = {
+		"tech_mining_network_3"
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requirement_has_water"
+			tile = {
+				OR = {
+					has_deposit = "d_food_with_water_deposit"
+					has_deposit = "d_energy_in_water_deposit"
+					has_deposit = "d_minerals_in_water_deposit"
+					has_deposit = "d_h2o_deposit"
+					has_deposit = "d_rich_h2o_deposit"
+					has_deposit = "d_vast_h2o_deposit"
+					has_deposit = "d_immense_h2o_deposit"
+				}
+			}
+		}		
+	}
+	
+	adjacency_bonus = {
+		resource_food_add = 2
+	}
+	
+	planet_modifier = {
+		pop_happiness = 0.05
+	}
+}
+
+building_ice_processor = {
+	base_buildtime = 270
+	planet_unique = yes
+	
+	cost = {
+		minerals = 100
+		energy = 100
+	}
+	
+	produced_resources = {
+		sr_h2o = 5
+	}
+	
+	required_resources = {
+		sr_ice = 4
+		energy = 1
+	}
+}
+
+building_ice_rig = {
+	base_buildtime = 270
+	
+	cost = {
+		minerals = 100
+		energy = 100
+	}
+	
+	produced_resources = {
+		sr_ice = 1
+		minerals = 1
+	}
+	
+	upgrades = {
+		building_ice_rig_2
+	}
+	
+	potential = {
+		tile = {
+			OR = {
+				has_deposit = "d_minerals_in_ice_deposit"
+				has_deposit = "d_ice_deposit"
+				has_deposit = "d_rich_ice_deposit"
+				has_deposit = "d_vast_ice_deposit"
+				has_deposit = "d_immense_ice_deposit"
+			}
+		}
+	}
+	
+	required_resources = {
+		energy = 1
+	}
+}
+
+building_ice_rig_2 = {
+	base_buildtime = 270
+	is_listed = no
+	
+	cost = {
+		minerals = 150
+		energy = 100
+	}
+	
+	produced_resources = {
+		sr_ice = 2
+		minerals = 1
+		food = 1
+	}
+	
+	potential = {
+		tile = {
+			OR = {
+				has_deposit = "d_minerals_in_ice_deposit"
+				has_deposit = "d_ice_deposit"
+				has_deposit = "d_rich_ice_deposit"
+				has_deposit = "d_vast_ice_deposit"
+				has_deposit = "d_immense_ice_deposit"
+			}
+		}
+	}
+	
+	required_resources = {
+		energy = 2
+	}
+	
+	prerequisites = {
+		"tech_arctic_colonization"
+	}
+}

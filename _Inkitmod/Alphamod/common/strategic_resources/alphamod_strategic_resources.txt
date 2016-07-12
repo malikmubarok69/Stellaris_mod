@@ -1,0 +1,141 @@
+#AlphaMod
+
+# These are supposed to be local to planets, like food
+sr_h2o = {
+	is_planet_local = yes
+	AI_category = food
+	is_rare = yes
+}
+
+sr_biomass = {
+	is_planet_local = yes
+	AI_category = food
+	is_rare = yes
+}
+
+# These are galactic-wide
+sr_exotic_foods = {
+	AI_category = food
+	is_rare = yes
+	prerequisites = { "tech_gene_crops" }
+}
+
+sr_luxuries = {
+	AI_category = strategic_resource
+	tradable = yes
+	is_rare = yes
+	prerequisites = { "tech_trade_ports" }
+}
+
+sr_intelligence = {
+	AI_category = strategic_resource
+	tradable = yes
+	is_rare = yes
+}
+
+sr_gigarelays = {
+	AI_category = strategic_resource
+	is_rare = yes
+}
+
+sr_tradegoods = {
+	AI_category = strategic_resource
+	tradable = yes
+	is_rare = yes
+	prerequisites = { "tech_trade_ports" }
+}
+
+sr_nutrient_rations = {
+	AI_category = society
+	tradable = yes
+	is_rare = yes
+	prerequisites = { "tech_frontier_trade_alpha" }
+}
+
+sr_micro_cores = {
+	AI_category = energy
+	tradable = yes
+	is_rare = yes
+	prerequisites = { "tech_alpha_micro_fission" }	
+	num_ai_wanted = 100
+}
+
+sr_replicator_gems = {
+	AI_category = minerals
+	tradable = yes
+	is_rare = yes
+	prerequisites = { "tech_matter_replication_alpha" }	
+	num_ai_wanted = 100
+}
+
+sr_synthehol = {
+	AI_category = society
+	tradable = yes
+	is_rare = yes
+	prerequisites = { "tech_space_recreation" }
+}
+
+sr_atmos_regulators = {
+	AI_category = engineering
+	is_rare = yes
+	prerequisites = { "tech_alpha_survey_corps" }
+}
+
+sr_biomass_pods = {
+	AI_category = food
+	tradable = yes
+	is_rare = yes
+	prerequisites = { "tech_biomass_transfer_alpha" }
+}
+
+sr_ice = {
+	AI_category = minerals
+	collect_if_wrong_building = no
+	is_rare = yes
+	prerequisites = { "tech_eco_simulation" }
+}
+
+sr_medicals = {
+	AI_category = society
+	is_rare = yes
+	prerequisites = { "tech_frontier_health" }
+}
+
+sr_natural_fuels = {
+	AI_category = energy
+	collect_if_wrong_building = no
+	is_rare = yes
+	prerequisites = { "tech_eco_simulation" }
+}
+
+sr_wormspice = {
+	AI_category = strategic_resource
+	tradable = yes
+	collect_if_wrong_building = no
+	is_rare = yes	
+	prerequisites = { "tech_desert_colonization" }
+}
+
+sr_ambassadors = {
+	AI_category = influence
+	is_rare = yes
+	prerequisites = { "tech_alpha_diplomatic_corps" }
+}
+
+sr_sacred_weapons = {
+	AI_category = influence
+	is_rare = yes
+	prerequisites = { "tech_colonial_warlords_alpha" }
+}
+
+sr_wealth = {
+	AI_category = influence
+	is_rare = yes
+	prerequisites = { "tech_eco_simulation" }	
+}
+
+sr_standard_materials = {
+	AI_category = minerals
+	is_rare = yes
+	prerequisites = { "tech_eco_simulation" }
+}

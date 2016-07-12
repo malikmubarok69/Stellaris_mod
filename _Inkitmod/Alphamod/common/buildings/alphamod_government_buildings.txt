@@ -1,0 +1,282 @@
+building_libraryofadministration = {
+	base_buildtime = 180
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 100
+		energy = 100
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = "requirement_wrong_government"
+			planet = {
+				owner = {
+					OR = {
+						has_government = subconscious_consensus
+						has_government = science_directorate
+						has_government = illuminated_technocracy
+						has_government = ai_overlordship
+						has_government = irenic_protectorate
+					}
+				}
+			}
+		}		
+	}
+	
+	adjacency_bonus = {
+		resource_engineering_research_add = 2
+		resource_physics_research_add = 2
+	}
+	
+	produced_resources = {
+		influence = 0.5
+		society_research = 3
+	}
+	
+	planet_modifier = {
+		tile_resource_energy_mult = -0.05
+	}
+	
+	country_modifier = {
+		all_technology_research_speed = 0.01
+	}
+
+	prerequisites = {
+		"tech_colonial_administrations_alpha"
+	}
+}
+
+building_chamberofexecutives = {
+	base_buildtime = 180
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 100
+		energy = 150
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = "requirement_wrong_government"
+			planet = {
+				owner = {
+					OR = {
+						has_government = plutocratic_oligarchy
+						has_government = mega_corporation
+						has_government = peaceful_bureaucracy
+					}
+				}
+			}
+		}		
+	}
+	
+	adjacency_bonus = {
+		resource_minerals_add = 1
+	}
+	
+	produced_resources = {
+		influence = 0.5
+		engineering_research = 2
+		sr_wealth = 2
+	}
+	
+	planet_modifier = {
+		tile_resource_energy_mult = -0.05
+		tile_resource_minerals_mult = 0.1
+	}
+	
+	country_modifier = {
+		country_trade_attractiveness = 0.01
+	}
+
+	prerequisites = {
+		"tech_colonial_corporations_alpha"
+	}
+}
+
+building_hallofwarriors = {
+	base_buildtime = 180
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 150
+		energy = 50
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requirement_wrong_government"
+			planet = {
+				owner = {
+					OR = {
+						has_government = ordered_stratocracy
+						has_government = martial_empire					
+					}
+				}
+			}
+		}		
+	}
+	
+	produced_resources = {
+		influence = 1.0
+		sr_sacred_weapons = 1
+	}
+	
+	planet_modifier = {
+		pop_ethic_shift = -0.05
+		tile_resource_energy_mult = -0.05
+		planet_fortification_strength = 0.20
+	}
+	
+	army_modifier = {
+		army_damage_mult = 0.10
+	}
+
+	prerequisites = {
+		"tech_colonial_warlords_alpha"
+	}
+}
+
+building_governerspalace = {
+	base_buildtime = 360
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 150
+		energy = 50
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requirement_wrong_government"
+			planet = {
+				owner = {
+					OR = {
+						has_government = military_dictatorship
+						has_government = military_junta
+						has_government = despotic_hegemony
+					}
+				}
+			}
+		}		
+	}
+	
+	produced_resources = {
+		influence = 1.0
+		sr_wealth = 1
+	}
+	
+	adjacency_bonus = {
+		resource_food_add = 1
+	}
+	
+	planet_modifier = {
+		pop_ethic_shift = -0.10
+		tile_resource_energy_mult = -0.1
+		planet_army_build_speed_mult = 0.15
+		slave_production_output = 0.1
+	}
+
+	prerequisites = {
+		"tech_colonial_dictatorship_alpha"
+	}
+}
+
+building_templeofrule = {
+	base_buildtime = 360
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 200
+		energy = 100
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requirement_wrong_government"
+			planet = {
+				owner = {
+					OR = {
+						has_government = theocratic_republic
+						has_government = transcendent_republic
+						has_government = theocratic_oligarchy
+						has_government = transcendent_oligarchy
+						has_government = divine_mandate
+						has_government = transcendent_empire
+					}
+				}
+			}
+		}		
+	}
+	
+	produced_resources = {
+		influence = 1.0
+	}
+	
+	adjacency_bonus = {
+		resource_food_add = 1
+	}
+	
+	planet_modifier = {
+		pop_ethic_shift = -0.10
+		pop_happiness = 0.05
+	}
+
+	prerequisites = {
+		"tech_colonial_spiritualleaders_alpha"
+	}
+}
+
+building_councilhall = {
+	base_buildtime = 180
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 100
+		energy = 50
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requirement_wrong_government"
+			planet = {
+				owner = {
+					OR = {
+						has_government = direct_democracy
+						has_government = moral_democracy
+						has_government = indirect_democracy
+						has_government = democratic_utopia
+						has_government = military_republic
+						has_government = martial_demarchy
+						has_government = enlightened_monarchy
+						has_government = irenic_monarchy
+					}
+				}
+			}
+		}		
+	}
+	
+	produced_resources = {
+		influence = 1.0
+	}
+	
+	adjacency_bonus = {
+		resource_energy_add = 1
+	}
+	
+	planet_modifier = {
+		pop_ethic_shift = -0.05
+		tile_resource_energy_mult = -0.05
+	}
+
+	prerequisites = {
+		"tech_colonial_councils_alpha"
+	}
+}

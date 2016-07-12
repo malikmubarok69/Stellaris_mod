@@ -1,0 +1,794 @@
+# Possible Deposit Variables
+# modifier - weight, will replace the weight value
+# modifier - factor, will multiply the weight value
+# resources, resource and amount
+# station = station class in orbit to gather
+# if you mix resources that are not supposed to be collected by an orbital station remember to put is_orbital_slot = no
+
+ d_food_with_water_deposit = {
+	resources = {
+		sr_h2o = 1
+		food = 1
+	}
+	is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 3
+			planet = {
+				OR = {
+					is_planet_class = pc_tropical
+					is_planet_class = pc_continental
+					is_planet_class = pc_gaia
+				}
+			}
+		}
+		modifier = {
+			weight = 1
+			planet = {
+				OR = {
+					is_planet_class = pc_tundra
+					is_planet_class = pc_ocean
+				}
+			}
+		}
+	}
+ }
+
+ d_energy_in_water_deposit = {
+	resources = {
+		sr_h2o = 3
+		energy = 1
+	}
+	is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 3
+			planet = {
+				OR = {
+					is_planet_class = pc_tropical
+					is_planet_class = pc_continental
+					is_planet_class = pc_gaia
+				}
+			}
+		}
+		modifier = {
+			weight = 1
+			planet = {
+				OR = {
+					is_planet_class = pc_arctic
+					is_planet_class = pc_tundra
+					is_planet_class = pc_ocean
+				}
+			}
+		}
+	}
+ } 
+
+ d_minerals_in_water_deposit = {
+	resources = {
+		sr_h2o = 3
+		minerals = 1
+	}
+	is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 3
+			planet = {
+				OR = {
+					is_planet_class = pc_tropical
+					is_planet_class = pc_ocean
+				}
+			}
+		}
+		modifier = {
+			weight = 1
+			planet = {
+				OR = {
+					is_planet_class = pc_arctic
+					is_planet_class = pc_tundra
+					is_planet_class = pc_continental
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_gaia
+				}
+			}
+		}
+	}
+ } 
+ 
+ d_minerals_in_ice_deposit = {
+	resources = {
+		sr_ice = 2
+		minerals = 1
+	}
+	station = shipclass_mining_station
+	orbital_weight = {
+		weight = 25
+	}
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 5
+			planet = {
+				OR = {
+					is_asteroid = yes
+					is_planet_class = pc_frozen
+				}
+			}
+		}
+		modifier = {
+			weight = 1
+			planet = {
+				is_planet_class = pc_arctic
+			}
+		}
+	}
+ }
+
+ d_ice_deposit = {
+	resources = {
+		sr_ice = 1
+		minerals = 1
+	}
+	station = shipclass_mining_station
+	orbital_weight = {
+		weight = 20
+	}
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 20
+			planet = {
+				is_planet_class = pc_frozen
+			}
+		}
+		modifier = {
+			weight = 10
+			planet = {
+				is_planet_class = pc_arctic
+			}
+		}
+		modifier = {
+			weight = 5
+			planet = {
+				OR = {
+					is_asteroid = yes
+					is_planet_class = pc_tundra
+				}
+			}
+		}
+		modifier = {
+			weight = 1
+			planet = {
+				OR = {
+					is_planet_class = pc_ocean
+					is_planet_class = pc_gaia
+					is_planet_class = pc_continental
+				}
+			}
+		}
+	}
+ }
+ 
+ d_rich_ice_deposit = {
+	resources = {
+		sr_ice = 2
+		minerals = 1
+	}
+	station = shipclass_mining_station
+	orbital_weight = {
+		weight = 15
+	}
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 20
+			planet = {
+				is_planet_class = pc_frozen
+			}
+		}
+		modifier = {
+			weight = 5
+			planet = {
+				is_planet_class = pc_arctic
+			}
+		}
+		modifier = {
+			weight = 2
+			planet = {
+				OR = {
+					is_asteroid = yes
+					is_planet_class = pc_tundra
+				}
+			}
+		}
+		modifier = {
+			weight = 1
+			planet = {
+				OR = {
+					is_planet_class = pc_ocean
+					is_planet_class = pc_gaia
+					is_planet_class = pc_continental
+				}
+			}
+		}
+	}
+ }
+ 
+ d_vast_ice_deposit ={
+	resources = {
+		sr_ice = 3
+		minerals = 1
+	}
+	station = shipclass_mining_station
+	orbital_weight = {
+		weight = 10
+	}
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 20
+			planet = {
+				is_planet_class = pc_frozen
+			}
+		}
+		modifier = {
+			weight = 5
+			planet = {
+				is_planet_class = pc_arctic
+			}
+		}
+		modifier = {
+			weight = 1
+			planet = {
+				OR = {
+					is_asteroid = yes
+					is_planet_class = pc_tundra
+				}
+			}
+		}
+	}
+ }
+ 
+ d_immense_ice_deposit ={
+	resources = {
+		sr_ice = 4
+		minerals = 1
+	}
+	station = shipclass_mining_station
+	orbital_weight = {
+		weight = 5
+	}
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 15
+			planet = {
+				is_planet_class = pc_frozen
+			}
+		}
+		modifier = {
+			weight = 3
+			planet = {
+				is_planet_class = pc_arctic
+			}
+		}
+		modifier = {
+			weight = 1
+			planet = {
+				is_asteroid = yes
+			}
+		}
+	}
+ }
+ 
+ d_natural_fuels_deposit ={
+	resources = {
+		sr_natural_fuels = 1
+		energy = 2
+	}
+	station = shipclass_mining_station
+	orbital_weight = {
+		weight = 5
+	}
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 5
+			planet = {
+				OR = {
+					is_planet_class = pc_frozen
+					is_planet_class = pc_gaia
+					is_planet_class = pc_tropical
+					is_planet_class = pc_desert
+					is_planet_class = pc_barren
+					is_planet_class = pc_gas_giant
+				}
+			}
+		}
+		modifier = {
+			weight = 2
+			planet = {
+				OR = {
+					is_planet_class = pc_arctic
+					is_planet_class = pc_tundra
+					is_planet_class = pc_ocean
+					is_planet_class = pc_arid
+					is_planet_class = pc_toxic
+				}
+			}
+		}
+		modifier = {
+			weight = 1
+			planet = {
+				OR = {
+					is_asteroid = yes
+					is_planet_class = pc_continental
+				}
+			}
+		}
+	}
+ }
+ 
+ d_rich_natural_fuels_deposit ={
+	resources = {
+		sr_natural_fuels = 2
+		energy = 2
+	}
+	station = shipclass_mining_station
+	orbital_weight = {
+		weight = 2
+	}
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 5
+			planet = {
+				OR = {
+					is_planet_class = pc_frozen
+					is_planet_class = pc_gaia
+					is_planet_class = pc_tropical
+					is_planet_class = pc_desert
+					is_planet_class = pc_barren
+					is_planet_class = pc_gas_giant
+				}
+			}
+		}
+		modifier = {
+			weight = 2
+			planet = {
+				OR = {
+					is_planet_class = pc_arctic
+					is_planet_class = pc_tundra
+					is_planet_class = pc_ocean
+					is_planet_class = pc_arid
+					is_planet_class = pc_toxic
+				}
+			}
+		}
+		modifier = {
+			weight = 1
+			planet = {
+				OR = {
+					is_asteroid = yes
+					is_planet_class = pc_continental
+				}
+			}
+		}
+	}
+ }
+ 
+ d_natural_fuels_and_minerals_deposit ={
+	resources = {
+		sr_natural_fuels = 1
+		minerals = 2
+	}
+	station = shipclass_mining_station
+	is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 5
+			planet = {
+				OR = {
+					is_planet_class = pc_frozen
+					is_planet_class = pc_gaia
+					is_planet_class = pc_tropical
+					is_planet_class = pc_desert
+					is_planet_class = pc_barren
+				}
+			}
+		}
+		modifier = {
+			weight = 1
+			planet = {
+				OR = {
+					is_planet_class = pc_arctic
+					is_planet_class = pc_tundra
+					is_planet_class = pc_ocean
+					is_planet_class = pc_arid
+					is_planet_class = pc_toxic
+					is_planet_class = pc_continental
+				}
+			}
+		}
+	}
+ }
+
+ d_biomass_deposit ={
+	resources = {
+		sr_biomass = 1
+		food = 1
+	}
+	is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 5
+			planet = {
+				OR = {
+					is_planet_class = pc_gaia
+					is_planet_class = pc_tropical
+				}
+			}
+		}
+		modifier = {
+			weight = 1
+			planet = {
+				OR = {
+					is_planet_class = pc_ocean
+					is_planet_class = pc_continental
+				}
+			}
+		}
+	}
+ }
+ 
+ d_biomass_and_water_deposit ={
+	resources = {
+		sr_biomass = 1
+		sr_h2o = 1
+		food = 1
+	}
+	is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 5
+			planet = {
+				OR = {
+					is_planet_class = pc_gaia
+					is_planet_class = pc_tropical
+				}
+			}
+		}
+		modifier = {
+			weight = 1
+			planet = {
+				OR = {
+					is_planet_class = pc_ocean
+					is_planet_class = pc_continental
+				}
+			}
+		}
+	}
+ }
+ 
+ d_biomass_and_food_deposit ={
+	resources = {
+		sr_biomass = 1
+		food = 2
+	}
+	is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 5
+			planet = {
+				OR = {
+					is_planet_class = pc_gaia
+					is_planet_class = pc_tropical
+				}
+			}
+		}
+		modifier = {
+			weight = 1
+			planet = {
+				OR = {
+					is_planet_class = pc_ocean
+					is_planet_class = pc_continental
+				}
+			}
+		}
+	}
+ }
+ 
+ d_biomass_and_minerals_deposit ={
+	resources = {
+		sr_biomass = 1
+		minerals = 1
+	}
+	is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 3
+			planet = {
+				OR = {
+					is_planet_class = pc_gaia
+					is_planet_class = pc_tropical
+				}
+			}
+		}
+		modifier = {
+			weight = 1
+			planet = {
+				OR = {
+					is_planet_class = pc_ocean
+					is_planet_class = pc_continental
+				}
+			}
+		}
+	}
+ }
+ 
+ d_rich_biomass_and_food_deposit ={
+	resources = {
+		sr_biomass = 2
+		food = 3
+	}
+	is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			planet = {
+				OR = {
+					is_planet_class = pc_gaia
+					is_planet_class = pc_tropical
+				}
+			}
+		}
+	}
+ }
+ 
+ d_rich_biomass_deposit ={
+	resources = {
+		sr_biomass = 3
+		food = 1
+	}
+	is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			planet = {
+				OR = {
+					is_planet_class = pc_gaia
+					is_planet_class = pc_tropical
+					is_planet_class = pc_continental
+					is_planet_class = pc_ocean
+				}
+			}
+		}
+	}
+ }
+ 
+ d_h2o_deposit ={
+	resources = {
+		sr_h2o = 1
+		food = 1
+	}
+	is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 10
+			planet = {
+				OR = {
+					is_planet_class = pc_gaia
+					is_planet_class = pc_tropical
+					is_planet_class = pc_continental
+					is_planet_class = pc_ocean
+					is_planet_class = pc_ringworld_habitable
+				}
+			}
+		}
+		modifier = {
+			weight = 5
+			planet = {
+				OR = {
+					is_planet_class = pc_arctic
+					is_planet_class = pc_tundra
+				}
+			}
+		}
+		modifier = {
+			weight = 3
+			planet = {
+				is_planet_class = pc_arid
+			}
+		}
+		modifier = {
+			weight = 1
+			planet = {
+				is_planet_class = pc_desert
+			}
+		}
+	}
+ }
+ 
+ d_rich_h2o_deposit ={
+	resources = {
+		sr_h2o = 2
+		minerals = 1
+	}
+	is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 10
+			planet = {
+				OR = {
+					is_planet_class = pc_gaia
+					is_planet_class = pc_tropical
+					is_planet_class = pc_continental
+					is_planet_class = pc_ocean
+					is_planet_class = pc_ringworld_habitable
+				}
+			}
+		}
+		modifier = {
+			weight = 5
+			planet = {
+				OR = {
+					is_planet_class = pc_arctic
+					is_planet_class = pc_tundra
+				}
+			}
+		}
+		modifier = {
+			weight = 3
+			planet = {
+				is_planet_class = pc_arid
+			}
+		}
+		modifier = {
+			weight = 1
+			planet = {
+				is_planet_class = pc_desert
+			}
+		}
+	}
+ }
+ 
+ d_vast_h2o_deposit ={
+	resources = {
+		sr_h2o = 3
+		food = 1
+	}
+	is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 10
+			planet = {
+				OR = {
+					is_planet_class = pc_gaia
+					is_planet_class = pc_tropical
+					is_planet_class = pc_continental
+					is_planet_class = pc_ocean
+					is_planet_class = pc_ringworld_habitable
+				}
+			}
+		}
+		modifier = {
+			weight = 5
+			planet = {
+				OR = {
+					is_planet_class = pc_arctic
+					is_planet_class = pc_tundra
+				}
+			}
+		}
+		modifier = {
+			weight = 1
+			planet = {
+				is_planet_class = pc_arid
+			}
+		}
+	}
+ }
+ 
+ d_immense_h2o_deposit ={
+	resources = {
+		sr_h2o = 4
+		energy = 1
+	}
+	is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 5
+			planet = {
+				OR = {
+					is_planet_class = pc_gaia
+					is_planet_class = pc_tropical
+					is_planet_class = pc_continental
+					is_planet_class = pc_ocean
+					is_planet_class = pc_ringworld_habitable
+				}
+			}
+		}
+		modifier = {
+			weight = 2
+			planet = {
+				OR = {
+					is_planet_class = pc_arctic
+					is_planet_class = pc_tundra
+				}
+			}
+		}
+	}
+ }
+ 
+d_exotic_foods_deposit = {
+	resources = {
+		sr_exotic_foods = 1
+		food = 2
+	}
+	is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			planet = {
+				AND = {
+					OR = {
+						is_planet_class = pc_gaia
+						is_planet_class = pc_continental
+					}
+				}
+			}
+		}
+		modifier = {
+			weight = 5
+			planet = {
+				AND = {
+					OR = {
+						is_planet_class = pc_tropical
+						is_planet_class = pc_ocean
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			planet = {
+				OR = {
+					has_planet_modifier = "pm_lush"
+					has_planet_modifier = "pm_dangerous_wildlife"
+				}
+			}
+		}
+	}
+}

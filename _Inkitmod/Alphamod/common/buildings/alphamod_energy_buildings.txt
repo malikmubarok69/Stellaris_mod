@@ -1,0 +1,262 @@
+building_hypermall = {
+	base_buildtime = 360
+	planet_unique = yes
+	
+	cost = {
+		minerals = 200
+		energy = 50
+	}
+
+	required_resources = {
+		minerals = 3
+		sr_tradegoods = 2
+		sr_replicator_gems = 1
+	}
+	
+	produced_resources = {
+		energy = 8
+		food = 2
+		sr_luxuries = 1
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_2"
+			planet = {
+				OR = {
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+					has_building = "building_mining_guild"
+					has_building = "building_central_databank"
+					has_building = "building_farming_guild"
+					has_building = "building_commerce_coord"
+				}
+			}
+		}
+	}
+	
+	planet_modifier = {
+		tile_resource_energy_mult = 0.1
+		pop_happiness = 0.1
+	}
+
+	prerequisites = {
+		"tech_merchant_companies"
+	}
+	
+	ai_special_building = yes
+}
+
+building_powerbank = {
+	base_buildtime = 360
+	planet_unique = yes
+	
+	cost = {
+		minerals = 150
+		energy = 250
+		influence = 25
+	}
+	
+	required_resources = {
+		minerals = 10
+		sr_micro_cores = 1
+	}
+	
+	produced_resources = {
+		energy = 5
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = "requires_commerce_capitaleq"
+			planet = {
+				OR = {
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+					has_building = "building_commerce_coord"
+				}
+			}
+		}
+	}
+		
+	planet_modifier = {
+		tile_resource_energy_mult = 0.1
+	}
+
+	country_modifier = {
+		max_energy = 250
+	}
+
+	prerequisites = {
+		"tech_power_banking"
+	}
+	
+	ai_special_building = yes
+}
+
+building_hydro_plant = {
+	base_buildtime = 360
+	
+	cost = {
+		minerals = 90
+		energy = 25
+	}
+	
+	produced_resources = {
+		energy = 3
+		sr_h2o = 1
+	}
+	
+	upgrades = {
+		building_hydro_plant_2
+	}
+	
+	potential = {
+		tile = {
+			OR = {
+				has_deposit = "d_rich_h2o_deposit"
+				has_deposit = "d_vast_h2o_deposit"
+				has_deposit = "d_immense_h2o_deposit"
+				has_deposit = "d_energy_in_water_deposit"
+				has_deposit = "d_minerals_in_water_deposit"
+			}
+		}	
+	}
+}
+
+building_hydro_plant_2 = {
+	base_buildtime = 360
+	is_listed = no
+	
+	cost = {
+		minerals = 120
+		energy = 50
+	}
+	
+	produced_resources = {
+		energy = 5
+		sr_h2o = 1
+	}
+	
+	prerequisites = {
+		"tech_alpha_adv_renewable"
+	}
+}
+
+building_steam_plant = {
+	base_buildtime = 180
+	planet_unique = yes
+	
+	cost = {
+		minerals = 50
+		energy = 100
+	}
+	
+	required_resources = {
+		sr_ice = 10
+		sr_natural_fuels = 2
+	}
+	
+	produced_resources = {
+		energy = 12
+		sr_h2o = 5
+	}
+	
+	prerequisites = {
+		"tech_alpha_steam_plants"
+	}
+}
+
+building_hydro_cell_bank = {
+	base_buildtime = 720
+	planet_unique = yes
+	
+	cost = {
+		minerals = 200
+		energy = 150
+		influence = 10
+	}
+	
+	required_resources = {
+		sr_h2o = 10
+	}
+	
+	produced_resources = {
+		energy = 12
+	}
+	
+	country_modifier = {
+		max_energy = 250
+	}
+	
+	prerequisites = {
+		"tech_alpha_hydro_cells"
+	}
+}
+
+building_geothermal_tap = {
+	base_buildtime = 360
+	
+	cost = {
+		minerals = 150
+		energy = 100
+	}
+	
+	required_resources = {
+		sr_h2o = 2
+	}
+	
+	produced_resources = {
+		energy = 5
+		engineering_research = 2
+	}
+	
+	potential = {
+		tile = {
+			any_neighboring_tile = {
+				has_blocker = "tb_active_volcano"
+			}
+		}
+	}
+	
+	prerequisites = {
+		"tech_tb_volcano"
+	}
+}
+
+building_atmos_gen = {
+	base_buildtime = 360
+	requires_pop = no
+	
+	cost = {
+		minerals = 150
+		energy = 100
+	}
+	
+	potential = {
+		planet = {
+			OR = {
+				is_planet_class = pc_asteroid
+				is_planet_class = pc_barren
+			}
+		}
+	}
+	
+	required_resources = {
+		sr_ice = 3
+		sr_natural_fuels = 3
+	}
+	
+	produced_resources = {
+		energy = 2
+		sr_h2o = 1
+	}
+	
+	planet_modifier = {
+		pop_environment_tolerance = 0.1
+	}
+	
+	prerequisites = {
+		"tech_alpha_exo_atmospheres"
+	}
+}

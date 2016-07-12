@@ -1,0 +1,510 @@
+##################
+### TECH COSTS ###
+##################
+#If you change any of these, use replace in files so the values are the same across all files
+
+@tier1cost1 = 240
+@tier1cost2 = 360
+@tier1cost3 = 480
+@tier1cost4 = 600
+
+@tier2cost1 = 900
+@tier2cost2 = 1200
+@tier2cost3 = 1500
+@tier2cost4 = 1800
+
+@tier3cost1 = 2320
+@tier3cost2 = 2840
+@tier3cost3 = 3360
+@tier3cost4 = 3880
+
+####################
+### TECH WEIGHTS ###
+####################
+
+@tier1weight1 = 100
+@tier1weight2 = 95
+@tier1weight3 = 90
+@tier1weight4 = 85
+
+@tier2weight1 = 75
+@tier2weight2 = 70
+@tier2weight3 = 65
+@tier2weight4 = 60
+
+@tier3weight1 = 50
+@tier3weight2 = 45
+@tier3weight3 = 40
+@tier3weight4 = 35
+
+# ExoOps
+tech_alpha_exo_ops = {
+	cost = @tier1cost2
+	area = engineering
+	category = { statecraft }
+	tier = 1
+	prerequisites = { "tech_alpha_survey_corps" }
+	weight = @tier1weight2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_statecraft"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+tech_alpha_exo_barracks = {
+	cost = @tier1cost2
+	area = engineering
+	category = { new_worlds }
+	tier = 1
+	prerequisites = { "tech_alpha_exo_ops" }
+	weight = @tier1weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}
+
+tech_alpha_exo_mining = {
+	cost = @tier1cost3
+	area = engineering
+	category = { industry }
+	tier = 1
+	prerequisites = { "tech_basic_industry" "tech_alpha_exo_ops" }
+	weight = @tier1weight2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+tech_alpha_exo_power = {
+	cost = @tier1cost2
+	area = engineering
+	category = { field_manipulation }
+	tier = 1
+	prerequisites = { "tech_power_plant_1" "tech_alpha_exo_ops" }
+	weight = @tier1weight2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+tech_alpha_exo_atmospheres = {
+	cost = @tier1cost4
+	area = engineering
+	category = { biology }
+	tier = 1
+	prerequisites = { "tech_alpha_exo_power" "tech_alpha_exo_mining" }
+	weight = @tier1weight2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_biology"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+}
+
+# Shuttle-craft
+tech_alpha_shuttlecraft = {
+	cost = @tier1cost3
+	area = engineering
+	category = { rocketry }
+	tier = 1
+	prerequisites = { "tech_thrusters_2" }
+	weight = @tier1weight1
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_rocketry"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_rocketry"
+			}
+		}
+	}
+}
+
+# Colony Habitation
+tech_alpha_survey_corps = {
+	cost = @tier1cost3
+	area = engineering
+	category = { new_worlds }
+	tier = 1
+	prerequisites = { "tech_alpha_shuttlecraft" }
+	weight = @tier1weight1
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}
+
+# Mining
+tech_alpha_natfuel_sourcing_2 = {
+	cost = @tier1cost3
+	area = engineering
+	category = { industry }
+	tier = 1
+	prerequisites = { "tech_mining_network_2" "tech_alpha_steam_plants" }
+	weight = @tier1weight3
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+tech_alpha_natfuel_sourcing_3 = {
+	cost = @tier2cost1
+	area = engineering
+	category = { industry }
+	tier = 2
+	prerequisites = { "tech_alpha_natfuel_sourcing_2" "tech_mining_network_3" }
+	weight = @tier2weight1
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+tech_alpha_mining_capitals = {
+	cost = @tier2cost2
+	area = engineering
+	category = { industry }
+	tier = 2	
+	prerequisites = { "tech_mining_network_3" "tech_matter_replication_alpha" }
+	weight = @tier2weight2
+
+	modifier = {
+		max_minerals = 1000
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+tech_matter_replication_alpha = {
+	cost = @tier2cost2
+	area = engineering
+	category = { field_manipulation }
+	tier = 2	
+	prerequisites = { "tech_mineral_processing_2" "tech_alpha_micro_fission" }
+	weight = @tier2weight2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+	}
+}
+
+# Biomass Transfer
+tech_biomass_transfer_alpha = {
+	cost = @tier2cost2
+	area = engineering
+	category = { biology }
+	tier = 2	
+	prerequisites = { "tech_mineral_processing_1" }
+	weight = @tier2weight2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+				has_ethic = ethic_collectivist
+				has_ethic = ethic_fanatic_collectivist
+				has_ethic = ethic_pacifist
+				has_ethic = ethic_fanatic_pacifist
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+				has_ethic = ethic_collectivist
+				has_ethic = ethic_fanatic_collectivist
+				has_ethic = ethic_pacifist
+				has_ethic = ethic_fanatic_pacifist
+			}
+		}
+	}
+}
+
+# Vertical Farming
+tech_alpha_verticalfarms = {
+	cost = @tier2cost1
+	area = engineering
+	category = { biology }
+	tier = 2
+	prerequisites = { "tech_powered_exoskeletons" }
+	weight = @tier2weight1
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_trait = "trait_pc_tundra_preference"
+				has_trait = "trait_pc_arid_preference"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_pc_tundra_preference"
+				has_trait = "trait_pc_arid_preference"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_pc_tundra_preference"
+				has_trait = "trait_pc_arid_preference"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_trait = "trait_pc_tundra_preference"
+				has_trait = "trait_pc_arid_preference"
+			}
+		}
+	}
+}
+
+# Industrial
+tech_alpha_adv_renewable = {
+	cost = @tier1cost3
+	area = engineering
+	category = { materials }
+	tier = 1
+	prerequisites = { "tech_ship_armor_1" "tech_powered_exoskeletons" }
+	weight = @tier1weight3
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+tech_alpha_steam_plants = {
+	cost = @tier1cost3
+	area = engineering
+	category = { industry }
+	tier = 1
+	prerequisites = { "tech_fusion_power" }
+	weight = @tier1weight3
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}

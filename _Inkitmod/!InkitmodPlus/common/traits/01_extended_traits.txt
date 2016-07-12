@@ -1,0 +1,84 @@
+############################
+#
+# Extended Traits
+# by r-M
+#
+############################
+
+trait_conservationists = {
+	cost = -3
+	
+	modifier = {
+		planet_clear_blocker_cost_mult = 0.5
+		planet_clear_blocker_time_mult = 0.75
+	}
+}
+
+trait_deliberators = {
+	cost = 2
+	opposites = { "trait_virtualists" }
+	
+	modifier = {
+		influence_gain_add = 1
+	}
+}
+
+trait_virtualists = {
+	cost = -2
+	opposites = { "trait_deliberators" }
+	
+	modifier = {
+		influence_gain_add = -1
+	}
+}
+
+trait_politically_adept = {
+	cost = 1
+	
+	modifier = {
+		max_rivalries = 1
+		diplomacy_influence_cost = -0.25
+		country_trust_growth = 0.25
+	}
+}
+
+trait_natural_architects = {
+	cost = 1
+	opposites = { "trait_incompetent_architects" }
+
+	modifier = {
+		building_time_mult = -0.05
+		planet_building_cost_mult = -0.1
+	}
+}
+
+trait_incompetent_architects = {
+	cost = -1
+	opposites = { "trait_natural_architects" }
+
+	modifier = {
+		building_time_mult = 0.05
+		planet_building_cost_mult = 0.1
+	}
+}
+
+
+# ############################## #
+# REMOVED TRAITS (COMPATABILITY) #
+# ############################## #
+trait_transient = {
+	cost = -1
+	initial = no
+	modification = no
+	modifier = { leader_age = -20 }
+	opposites = { "trait_venerable" "trait_enduring" "trait_fleeting" }
+}
+
+trait_individualistic = {
+	cost = -1
+	initial = no
+	modification = no
+	modifier = { pop_ethic_shift = 0.2 }
+	opposites = { "trait_conformists" "trait_deviants" }
+}
+

@@ -1,0 +1,317 @@
+# CoFH Tech - Sensor Variants
+# Author: King Lemming
+
+@combat_hit1 = 5
+@combat_hit2 = 10
+@combat_hit3 = 20
+@combat_hit4 = 30
+
+@combat_sensor1 = 5
+@combat_sensor2 = 10
+@combat_sensor3 = 15
+@combat_sensor4 = 20
+
+@deep_space_sensor1 = 40
+@deep_space_sensor2 = 60
+@deep_space_sensor3 = 80
+@deep_space_sensor4 = 100
+
+utility_component_template = {
+	key = "SHIP_COMBAT_SENSOR_1"
+	size = medium
+	icon = "GFX_ship_part_combat_sensor_1"
+	icon_frame = 1
+	power = -5
+	cost = 10
+	sensor_range = @combat_sensor1
+
+	component_set = "ship_sensor_components"
+
+	ship_modifier = {
+		ship_accuracy_add = @combat_hit1
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "SHIP_COMBAT_SENSOR_2"
+	size = medium
+	icon = "GFX_ship_part_combat_sensor_2"
+	icon_frame = 1
+	power = -10
+	cost = 20
+	sensor_range = @combat_sensor2
+
+	prerequisites = { "tech_sensors_2" }
+	component_set = "ship_sensor_components"
+
+	ship_modifier = {
+		ship_accuracy_add = @combat_hit2
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+utility_component_template = {
+	key = "SHIP_COMBAT_SENSOR_3"
+	size = medium
+	icon = "GFX_ship_part_combat_sensor_3"
+	icon_frame = 1
+	power = -20
+	cost = 20
+	sensor_range = @combat_sensor3
+
+	prerequisites = { "tech_sensors_3" }
+	component_set = "ship_sensor_components"
+
+	ship_modifier = {
+		ship_accuracy_add = @combat_hit3
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+utility_component_template = {
+	key = "SHIP_COMBAT_SENSOR_4"
+	size = medium
+	icon = "GFX_ship_part_combat_sensor_4"
+	icon_frame = 1
+	power = -30
+	cost = 20
+	sensor_range = @combat_sensor4
+
+	ship_modifier = {
+		ship_accuracy_add = @combat_hit4
+	}
+
+	prerequisites = { "tech_sensors_4" }
+	component_set = "ship_sensor_components"
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+utility_component_template = {
+	key = "STATION_COMBAT_SENSOR_1"
+	size = medium
+	icon = "GFX_ship_part_combat_sensor_1"
+	icon_frame = 1
+	power = -5
+	cost = 10
+	sensor_range = @combat_sensor1
+
+	component_set = "station_sensor_components"
+
+	ship_modifier = {
+		ship_accuracy_add = @combat_hit1
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "STATION_COMBAT_SENSOR_2"
+	size = medium
+	icon = "GFX_ship_part_combat_sensor_2"
+	icon_frame = 1
+	power = -10
+	cost = 20
+	sensor_range = @combat_sensor2
+
+	prerequisites = { "tech_sensors_2" }
+	component_set = "station_sensor_components"
+
+	ship_modifier = {
+		ship_accuracy_add = @combat_hit2
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+utility_component_template = {
+	key = "STATION_COMBAT_SENSOR_3"
+	size = medium
+	icon = "GFX_ship_part_combat_sensor_3"
+	icon_frame = 1
+	power = -20
+	cost = 20
+	sensor_range = @combat_sensor3
+
+	prerequisites = { "tech_sensors_3" }
+	component_set = "station_sensor_components"
+
+	ship_modifier = {
+		ship_accuracy_add = @combat_hit3
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+utility_component_template = {
+	key = "STATION_COMBAT_SENSOR_4"
+	size = medium
+	icon = "GFX_ship_part_combat_sensor_4"
+	icon_frame = 1
+	power = -30
+	cost = 20
+	sensor_range = @combat_sensor4
+
+	ship_modifier = {
+		ship_accuracy_add = @combat_hit4
+	}
+
+	prerequisites = { "tech_sensors_4" }
+	component_set = "station_sensor_components"
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+utility_component_template = {
+	key = "SHIP_DEEP_SPACE_SENSOR_1"
+	size = medium
+	icon = "GFX_ship_part_deep_space_sensor_1"
+	icon_frame = 1
+	power = -5
+	cost = 10
+	sensor_range = @deep_space_sensor1
+
+	component_set = "ship_sensor_components"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "SHIP_DEEP_SPACE_SENSOR_2"
+	size = medium
+	icon = "GFX_ship_part_deep_space_sensor_2"
+	icon_frame = 1
+	power = -10
+	cost = 20
+	sensor_range = @deep_space_sensor2
+
+	prerequisites = { "tech_sensors_2" }
+	component_set = "ship_sensor_components"
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+utility_component_template = {
+	key = "SHIP_DEEP_SPACE_SENSOR_3"
+	size = medium
+	icon = "GFX_ship_part_deep_space_sensor_3"
+	icon_frame = 1
+	power = -20
+	cost = 20
+	sensor_range = @deep_space_sensor3
+
+	prerequisites = { "tech_sensors_3" }
+	component_set = "ship_sensor_components"
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+utility_component_template = {
+	key = "SHIP_DEEP_SPACE_SENSOR_4"
+	size = medium
+	icon = "GFX_ship_part_deep_space_sensor_4"
+	icon_frame = 1
+	power = -30
+	cost = 20
+	sensor_range = @deep_space_sensor4
+
+	prerequisites = { "tech_sensors_4" }
+	component_set = "ship_sensor_components"
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+utility_component_template = {
+	key = "STATION_DEEP_SPACE_SENSOR_1"
+	size = medium
+	icon = "GFX_ship_part_deep_space_sensor_1"
+	icon_frame = 1
+	power = -5
+	cost = 10
+	sensor_range = @deep_space_sensor1
+
+	component_set = "station_sensor_components"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "STATION_DEEP_SPACE_SENSOR_2"
+	size = medium
+	icon = "GFX_ship_part_deep_space_sensor_2"
+	icon_frame = 1
+	power = -10
+	cost = 20
+	sensor_range = @deep_space_sensor2
+
+	prerequisites = { "tech_sensors_2" }
+	component_set = "station_sensor_components"
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+utility_component_template = {
+	key = "STATION_DEEP_SPACE_SENSOR_3"
+	size = medium
+	icon = "GFX_ship_part_deep_space_sensor_3"
+	icon_frame = 1
+	power = -20
+	cost = 20
+	sensor_range = @deep_space_sensor3
+
+	prerequisites = { "tech_sensors_3" }
+	component_set = "station_sensor_components"
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+utility_component_template = {
+	key = "STATION_DEEP_SPACE_SENSOR_4"
+	size = medium
+	icon = "GFX_ship_part_deep_space_sensor_4"
+	icon_frame = 1
+	power = -30
+	cost = 20
+	sensor_range = @deep_space_sensor4
+
+	prerequisites = { "tech_sensors_4" }
+	component_set = "station_sensor_components"
+
+	ai_weight = {
+		weight = 1000
+	}
+}

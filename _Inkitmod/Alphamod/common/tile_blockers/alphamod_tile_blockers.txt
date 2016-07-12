@@ -1,0 +1,204 @@
+# Possible Tile Blocker Variables
+# spawn_chance, tile scope, value will compete with the spawn chance of every other item and there's a constant 100 for no blocker to spawn.
+# cost, resource table, the cost to clear this tile blocker
+# time, amount of days it takes to clear this tile blocker.
+# picture = tb_active_volcano #Use art from tb_active_volcano
+
+tb_bottomless_pit = {
+	time = 360
+	cost = {
+		energy = 250
+		minerals = 250
+	}
+
+	spawn_chance = {
+		modifier = {
+			add = 20
+			planet = {
+				is_colonizable = yes
+				is_planet_class = pc_asteroid
+			}
+		}
+		modifier = {
+			add = 10
+			planet = {
+				is_colonizable = yes
+				is_planet_class = pc_barren
+			}
+		}
+	}
+}
+
+tb_deep_craters = {
+	time = 360
+	cost = {
+		energy = 250
+		minerals = 250
+	}
+
+	spawn_chance = {
+		modifier = {
+			add = 10
+			planet = {
+				is_colonizable = yes
+				is_planet_class = pc_asteroid
+			}
+		}
+		modifier = {
+			add = 20
+			planet = {
+				is_colonizable = yes
+				is_planet_class = pc_barren
+			}
+		}
+	}
+}
+
+tb_craggy_rocks = {
+	time = 360
+	cost = {
+		energy = 250
+		minerals = 250
+	}
+
+	spawn_chance = {
+		modifier = {
+			add = 25
+			planet = {
+				is_colonizable = yes
+				is_planet_class = pc_asteroid
+			}
+		}
+		modifier = {
+			add = 10
+			planet = {
+				is_colonizable = yes
+				is_planet_class = pc_barren
+			}
+		}
+	}
+}
+
+tb_rocky_cliffs = {
+	time = 360
+	cost = {
+		energy = 250
+		minerals = 250
+	}
+
+	spawn_chance = {
+		modifier = {
+			add = 25
+			planet = {
+				is_colonizable = yes
+				is_planet_class = pc_asteroid
+			}
+		}
+		modifier = {
+			add = 10
+			planet = {
+				is_colonizable = yes
+				is_planet_class = pc_barren
+			}
+		}
+	}
+}
+
+tb_wild_crops = {	
+	time = 60
+	cost = {
+		energy = 50
+	}
+
+	spawn_chance = {
+		modifier = {
+			add = 2
+			planet = {
+				is_colonizable = yes
+				is_planet_class = pc_gaia
+			}
+		}
+		modifier = {
+			add = 4
+			planet = {
+				is_colonizable = yes
+				is_planet_class = pc_tundra
+			}
+		}
+		modifier = {
+			add = 6
+			planet = {
+				is_colonizable = yes
+				is_planet_class = pc_arid
+			}
+		}
+		modifier = {
+			add = 1
+			planet = {
+				is_colonizable = yes
+				is_planet_class = pc_continental
+			}
+		}
+	}
+	
+	adjacency_bonus = {
+		resource_food_add = 1
+	}
+}
+
+tb_ancient_forest = {	
+	time = 100
+	cost = {
+		energy = 100
+		minerals = 100
+	}
+
+	spawn_chance = {
+		modifier = {
+			add = 15
+			planet = {
+				is_colonizable = yes
+				is_planet_class = pc_gaia
+			}
+		}
+		modifier = {
+			add = 10
+			planet = {
+				is_colonizable = yes
+				is_planet_class = pc_tundra
+			}
+		}
+		modifier = {
+			add = 5
+			planet = {
+				is_colonizable = yes
+				is_planet_class = pc_continental
+			}
+		}
+	}
+	
+	adjacency_bonus = {
+		resource_society_research_add = 1
+	}
+	
+	prerequisites = { "tech_tb_dense_jungle" }
+}
+
+tb_sandworm_activity = {	
+	cost = { # Can't be removed
+	}
+
+	spawn_chance = {
+		modifier = {
+			add = 1
+			planet = {
+				is_colonizable = yes
+				is_planet_class = pc_desert
+			}
+		}
+	}
+	
+	adjacency_bonus = {
+		resource_minerals_add = 1
+	}
+}

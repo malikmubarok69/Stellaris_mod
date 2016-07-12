@@ -1,0 +1,33 @@
+FALLEN1 = {
+	playable = yes
+	randomized = no
+
+	portraits = {
+		"mam14"
+	}
+
+	graphical_culture = fallen_empire_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+FALLEN2 = {
+	playable = yes
+	randomized = no
+
+	portraits = {
+		"rep13"
+	}
+
+	graphical_culture = fallen_empire_02
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+FALLEN3 = {
+	playable = yes
+	randomized = no
+
+	portraits = {
+		"mol15"
+	}
+
+	graphical_culture = fallen_empire_03
+	move_pop_sound_effect = "moving_pop_confirmation"
+}

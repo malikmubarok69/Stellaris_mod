@@ -1,0 +1,308 @@
+
+#############
+#	COST	#
+#############
+
+@cost_1S = 10
+@cost_1M = 20
+@cost_1L = 40
+
+@cost_2S = 15
+@cost_2M = 30
+@cost_2L = 60
+
+@cost_3S = 20
+@cost_3M = 40
+@cost_3L = 80
+
+@cost_4S = 25
+@cost_4M = 50
+@cost_4L = 100
+
+@cost_5S = 30
+@cost_5M = 60
+@cost_5L = 120
+
+#############
+#	REGEN	#
+#############
+
+@regen_1S = 0.007
+@regen_1M = 0.014
+@regen_1L = 0.028
+
+@regen_2S = 0.009
+@regen_2M = 0.018
+@regen_2L = 0.032
+
+@regen_3S = 0.011
+@regen_3M = 0.022
+@regen_3L = 0.044
+
+@regen_4S = 0.013
+@regen_4M = 0.026
+@regen_4L = 0.052
+
+@regen_5S = 0.015
+@regen_5M = 0.03
+@regen_5L = 0.06
+
+# ####################
+#  Regen mods
+# ####################
+
+
+# Auto-Repair / Hull Regeneration mk I
+
+utility_component_template = {
+	key = "C_SMALL_AUTO_REPAIR_1"
+	size = small
+	icon = "GFX_C_ship_part_auto_repair_1"
+	icon_frame = 1
+	power = 0
+	cost = @cost_1S
+	modifier = {
+		ship_auto_repair_add = @regen_1S
+	}
+	prerequisites = { tech_c_regenerative_hull_tissue_1 }
+	component_set = "C_AUTO_REPAIR_1"
+	military_power = 3
+}
+
+utility_component_template = {
+	key = "C_MEDIUM_AUTO_REPAIR_1"
+	size = medium
+	icon = "GFX_C_ship_part_auto_repair_1"
+	icon_frame = 1
+	power = 0
+	cost = @cost_1M
+
+	modifier = {
+		ship_auto_repair_add = @regen_1M
+	}
+	
+	prerequisites = { tech_c_regenerative_hull_tissue_1 }
+	component_set = "C_AUTO_REPAIR_1"
+	military_power = 6
+}
+
+utility_component_template = {
+	key = "C_LARGE_AUTO_REPAIR_1"
+	size = large
+	icon = "GFX_C_ship_part_auto_repair_1"
+	icon_frame = 1
+	power = 0
+	cost = @cost_1L
+
+	modifier = {
+		ship_auto_repair_add = @regen_1L
+	}
+	
+	prerequisites = { tech_c_regenerative_hull_tissue_1 }
+	component_set = "C_AUTO_REPAIR_1"
+	military_power = 9
+}
+
+# Auto-Repair / Hull Regeneration mk II
+
+utility_component_template = {
+	key = "C_SMALL_AUTO_REPAIR_2"
+	size = small
+	icon = "GFX_C_ship_part_auto_repair_2"
+	icon_frame = 1
+	power = 0
+	cost = @cost_2S
+	modifier = {
+		ship_auto_repair_add = @regen_2S
+	}
+	prerequisites = { tech_c_regenerative_hull_tissue_2 }
+	component_set = "C_AUTO_REPAIR_2"
+	military_power = 5
+}
+
+utility_component_template = {
+	key = "C_MEDIUM_AUTO_REPAIR_2"
+	size = medium
+	icon = "GFX_C_ship_part_auto_repair_2"
+	icon_frame = 1
+	power = 0
+	cost = @cost_2M
+
+	modifier = {
+		ship_auto_repair_add = @regen_2M
+	}
+	
+	prerequisites = { tech_c_regenerative_hull_tissue_2 }
+	component_set = "C_AUTO_REPAIR_2"
+	military_power = 7
+}
+
+utility_component_template = {
+	key = "C_LARGE_AUTO_REPAIR_2"
+	size = large
+	icon = "GFX_C_ship_part_auto_repair_2"
+	icon_frame = 1
+	power = 0
+	cost = @cost_2L
+
+	modifier = {
+		ship_auto_repair_add = @regen_2L
+	}
+	
+	prerequisites = { tech_c_regenerative_hull_tissue_2 }
+	component_set = "C_AUTO_REPAIR_2"
+	military_power = 14
+}
+
+# Auto-Repair / Hull Regeneration mk III
+
+utility_component_template = {
+	key = "C_SMALL_AUTO_REPAIR_3"
+	size = small
+	icon = "GFX_C_ship_part_auto_repair_3"
+	icon_frame = 1
+	power = 0
+	cost = @cost_3S
+	modifier = {
+		ship_auto_repair_add = @regen_3S
+	}
+	prerequisites = { tech_c_regenerative_hull_tissue_3 }
+	component_set = "C_AUTO_REPAIR_3"
+	military_power = 7
+}
+
+utility_component_template = {
+	key = "C_MEDIUM_AUTO_REPAIR_3"
+	size = medium
+	icon = "GFX_C_ship_part_auto_repair_3"
+	icon_frame = 1
+	power = 0
+	cost = @cost_3M
+
+	modifier = {
+		ship_auto_repair_add = @regen_3M
+	}
+	
+	prerequisites = { tech_c_regenerative_hull_tissue_3 }
+	component_set = "C_AUTO_REPAIR_3"
+	military_power = 14
+}
+
+utility_component_template = {
+	key = "C_LARGE_AUTO_REPAIR_3"
+	size = large
+	icon = "GFX_C_ship_part_auto_repair_3"
+	icon_frame = 1
+	power = 0
+	cost = @cost_3L
+
+	modifier = {
+		ship_auto_repair_add = @regen_3L
+	}
+	
+	prerequisites = { tech_c_regenerative_hull_tissue_3 }
+	component_set = "C_AUTO_REPAIR_3"
+	military_power = 28
+}
+
+# Auto-Repair / Hull Regeneration mk IV
+
+utility_component_template = {
+	key = "C_SMALL_AUTO_REPAIR_4"
+	size = small
+	icon = "GFX_C_ship_part_auto_repair_4"
+	icon_frame = 1
+	power = 0
+	cost = @cost_4S
+	modifier = {
+		ship_auto_repair_add = @regen_4S
+	}
+	prerequisites = { tech_c_regenerative_hull_tissue_4 }
+	component_set = "C_AUTO_REPAIR_4"
+	military_power = 9
+}
+
+utility_component_template = {
+	key = "C_MEDIUM_AUTO_REPAIR_4"
+	size = medium
+	icon = "GFX_C_ship_part_auto_repair_4"
+	icon_frame = 1
+	power = 0
+	cost = @cost_4M
+
+	modifier = {
+		ship_auto_repair_add = @regen_4M
+	}
+	
+	prerequisites = { tech_c_regenerative_hull_tissue_4 }
+	component_set = "C_AUTO_REPAIR_4"
+	military_power = 18
+}
+
+utility_component_template = {
+	key = "C_LARGE_AUTO_REPAIR_4"
+	size = large
+	icon = "GFX_C_ship_part_auto_repair_4"
+	icon_frame = 1
+	power = 0
+	cost = @cost_4L
+
+	modifier = {
+		ship_auto_repair_add = @regen_4L
+	}
+	
+	prerequisites = { tech_c_regenerative_hull_tissue_4 }
+	component_set = "C_AUTO_REPAIR_4"
+	military_power = 36
+}
+
+# Auto-Repair / Hull Regeneration mk V
+
+utility_component_template = {
+	key = "C_SMALL_AUTO_REPAIR_5"
+	size = small
+	icon = "GFX_C_ship_part_auto_repair_5"
+	icon_frame = 1
+	power = 0
+	cost = @cost_5S
+	modifier = {
+		ship_auto_repair_add = @regen_5S
+	}
+	prerequisites = { tech_c_regenerative_hull_tissue_5 }
+	component_set = "C_AUTO_REPAIR_5"
+	military_power = 11
+}
+
+utility_component_template = {
+	key = "C_MEDIUM_AUTO_REPAIR_5"
+	size = medium
+	icon = "GFX_C_ship_part_auto_repair_5"
+	icon_frame = 1
+	power = 0
+	cost = @cost_5M
+
+	modifier = {
+		ship_auto_repair_add = @regen_5M
+	}
+	
+	prerequisites = { tech_c_regenerative_hull_tissue_5 }
+	component_set = "C_AUTO_REPAIR_5"
+	military_power = 22
+}
+
+utility_component_template = {
+	key = "C_LARGE_AUTO_REPAIR_5"
+	size = large
+	icon = "GFX_C_ship_part_auto_repair_5"
+	icon_frame = 1
+	power = 0
+	cost = @cost_5L
+
+	modifier = {
+		ship_auto_repair_add = @regen_5L
+	}
+	
+	prerequisites = { tech_c_regenerative_hull_tissue_5 }
+	component_set = "C_AUTO_REPAIR_5"
+	military_power = 44
+}

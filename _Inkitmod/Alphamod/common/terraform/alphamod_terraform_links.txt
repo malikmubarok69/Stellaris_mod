@@ -1,0 +1,51 @@
+terraform_link = {
+	from = "pc_barren"
+	to = "pc_desert"
+	
+	duration = 3600
+	
+	energy = 2000
+	resources = {
+		sr_terraform_gases = 3
+		sr_terraform_liquids = 2
+		sr_wormspice = 1
+	}
+	
+	condition = {
+		if = {
+			limit = {
+				OR = {
+					ideal_planet_class = pc_ocean
+					ideal_planet_class = pc_arctic
+				}
+			}
+			has_technology = "tech_alpha_genesis_device"
+		}
+	}
+}
+
+terraform_link = {
+	from = "pc_barren"
+	to = "pc_arctic"
+	
+	duration = 3600
+	
+	energy = 2000
+	resources = {
+		sr_terraform_gases = 2
+		sr_terraform_liquids = 3
+		sr_ice = 20
+	}
+	
+	condition = {
+		if = {
+			limit = {
+				OR = {
+					ideal_planet_class = pc_desert
+					ideal_planet_class = pc_tropical
+				}
+			}
+			has_technology = "tech_alpha_genesis_device"
+		}
+	}
+}

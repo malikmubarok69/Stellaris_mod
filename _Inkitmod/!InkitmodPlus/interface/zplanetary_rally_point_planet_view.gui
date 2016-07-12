@@ -1,0 +1,54 @@
+guiTypes = {
+##### the z infront is to make sure this loads after everything else.
+#### for example the 1080p fix (which doesn't actually change this one in particular but will still overwrite)
+
+	###############################
+	# Planet Edicts Entry
+	###############################
+
+	containerWindowType = {
+		name = "planet_view_edicts_entry"
+		position = { x=0 y=0 }
+		size = { width = 330 height = 42 } # Increases the height from 36 to 42, just enough to show a second line of text
+		moveable = no
+
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tiles_dark_area_cut_8"
+		}
+
+		instantTextBoxType={
+			name = "edicts_name"
+			font = "cg_16b"
+			position = { x = 45 y = 10 }
+			fixedSize = yes
+			format = left
+			alwaysTransparent = yes
+		}
+
+		instantTextBoxType={
+			name = "cost"
+			font = "cg_16b"
+			position = { x = 258 y = 10 }
+			maxWidth = 50
+			fixedSize = yes
+			format = right
+		}
+
+		instantTextBoxType={
+			name = "active"
+			font = "cg_16b"
+			position = { x = 220 y = 10 }
+			maxWidth = 50
+			fixedSize = yes
+			format = right
+			text = "ACTIVE_GREEN"
+		}
+
+		buttonType = {
+			name = "select_button"
+			quadTextureSprite = "GFX_checkbox_20_20_01"
+			position = { x = 10 y = 3  }
+		}
+	}
+}

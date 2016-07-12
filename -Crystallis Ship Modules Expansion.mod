@@ -1,0 +1,5 @@
+name="-Crystallis Modules Expansion"
+path="mod/_Inkitmod/crystallismoduleexpansion"
+picture="Thumbnail.png"
+remote_file_id="690350384"
+supported_version="1.2"

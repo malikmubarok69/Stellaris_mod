@@ -1,0 +1,71 @@
+﻿l_spanish:
+####MODIFIERS#########
+
+# Rally Point 1 => Staging Area Alpha
+# Rally Point 2 => Staging Area Beta
+# Rally Point 3 => Staging Area Gamma
+
+ rally_point_capitalised:0 "Punto de Reunion"
+ rally_point:0 "Punto de Reunion"
+###### DESIGNATE RALLY POINT ########
+ rally_point_1:0 "$rally_point_capitalised$ Alpha"
+ rally_point_1_desc:0 "Este planeta a sido designado '$rally_point_1$' y puede ser elegido como un destino desde otros planetas de tu civilizacion"
+
+ rally_point_2:0 "$rally_point_capitalised$ Beta"
+ rally_point_2_desc:0 "Este planeta a sido designado '$rally_point_2$' y puede ser elegido como un destino desde otros planetas de tu civilizacion."
+
+ rally_point_3:0 "$rally_point_capitalised$ Gamma"
+ rally_point_3_desc:0 "Este planeta a sido designado '$rally_point_3$' y puede ser elegido como un destino desde otros planetas de tu civilizacion."
+
+
+##### SEND TO RALLY POINTS ##############
+ send_to_rally_point_1:0 "Asignado a $rally_point_1$"
+ send_to_rally_point_1_desc:0 "Este planeta enviara todas las naves construidas al $rally_point_1$."
+
+ send_to_rally_point_2:0 "Asignado a $rally_point_2$"
+ send_to_rally_point_2_desc:0 "Este planeta enviara todas las naves construidas al $rally_point_2$."
+
+ send_to_rally_point_3:0 "Asignado a $rally_point_3$"
+ send_to_rally_point_3_desc:0 "Este planeta enviara todas las naves construidas al $rally_point_3$."
+
+#################### EDICTS ##########################
+ edict_set_rally_point_removed.tooltip:0 "Este planeta cancelara su area de estacionamiento $rally_point$."
+ edict_set_rally_point.tooltip:0 "§Y[Root.GetName]§! se convertira en un $rally_point$."
+
+ sending_to_rally_point.tooltip:0 "Se convierte en el destino de nuestras naves de guerra de nueva construcción."
+
+
+ edict_set_rally_point_1:0 "Designar $rally_point_1$"
+ edict_set_rally_point_1_desc:0 "Este edicto establece un $rally_point$ en este planeta.\nCualquier previo $rally_point$ con esta designacion sera desmantelado."
+
+ edict_set_rally_point_2:0 "Designar $rally_point_2$"
+ edict_set_rally_point_2_desc:0 "Este edicto establece un $rally_point$ en este planeta.\nCualquier previo $rally_point$ con esta designacion sera desmantelado."
+ 
+ edict_set_rally_point_3:0 "Designar $rally_point_3$"
+ edict_set_rally_point_3_desc:0 "Este edicto establece un $rally_point$ en este planeta.\nCualquier previo $rally_point$ con esta designacion sera desmantelado."
+  
+ edict_send_to_rally_point_1:0 "Asignar a $rally_point_1$"
+ edict_send_to_rally_point_1_desc:0 "Este planeta enviara todas las naves construidas al $rally_point_1$."
+
+ edict_send_to_rally_point_2:0 "Asignar a $rally_point_2$"
+ edict_send_to_rally_point_2_desc:0 "Este planeta enviara todas las naves construidas al $rally_point_2$."
+
+ edict_send_to_rally_point_3:0 "Asignar a $rally_point_3$"
+ edict_send_to_rally_point_3_desc:0 "Este planeta enviara todas las naves construidas al $rally_point_3$."
+
+ edict_clear_rally_point:0 "Cancelar $rally_point_capitalised$"
+ edict_clear_rally_point_desc:0 " Este edicto cancelara todos los $rally_point$s establecidos en este planeta"
+
+
+ edict_clear_send_to_rally_point:0 "Cancelar asignacion"
+ edict_clear_send_to_rally_point_desc:0 "Este edicto cancelara tu asignacion hacia el $rally_point$."
+ 
+ edict_toggle_rally_point_visibility:0 "Mostrar/Ocultar edictos de estacionamiento"
+ edict_toggle_rally_point_visibility_desc:0 "Este edicto cambiara la visibilidad de los edictos de estacionamiento en este planeta."
+
+ edict_rally_to_me:0 "¡Enviar aqui!"
+ edict_rally_to_me_desc:0 "Este edicto asigna a los planetas cercanos a nuestro $rally_point$."
+ rally_to_me_custom.tooltip:0 "Este planeta se reunira con nosotros.\n"
+
+
+ ##Note to self: It's important that 'Root' and 'From' are spelled exactly like that, FROM won't work.

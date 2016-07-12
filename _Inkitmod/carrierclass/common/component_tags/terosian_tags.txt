@@ -1,0 +1,5 @@
+weapon_type_laser
+weapon_type_disruptor
+weapon_type_lance
+weapon_type_plasma
+weapon_type_arc

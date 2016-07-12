@@ -1,0 +1,296 @@
+building_fuel_sourcer = {
+	base_buildtime = 180
+	
+	cost = {
+		minerals = 50
+		energy = 25
+	}
+	
+	produced_resources = {
+		minerals = 1
+		sr_natural_fuels = 1
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requirement_natural_fuels_deposit"
+			tile = {
+				OR = {
+					has_deposit = "d_rich_natural_fuels_deposit"
+					has_deposit = "d_natural_fuels_deposit"
+					has_deposit = "d_natural_fuels_and_minerals_deposit"
+				}
+			}
+		}		
+	}
+	
+	planet_modifier = {
+		pop_environment_tolerance = -0.01
+	}
+	
+	upgrades = {
+		building_fuel_sourcer_2
+	}
+}
+
+building_fuel_sourcer_2 = {
+	base_buildtime = 210
+	
+	cost = {
+		minerals = 60
+		energy = 50
+	}
+	
+	produced_resources = {
+		minerals = 2
+		sr_natural_fuels = 1
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requirement_natural_fuels_deposit"
+			tile = {
+				OR = {
+					has_deposit = "d_rich_natural_fuels_deposit"
+					has_deposit = "d_natural_fuels_deposit"
+					has_deposit = "d_natural_fuels_and_minerals_deposit"
+				}
+			}
+		}		
+	}
+	
+	planet_modifier = {
+		pop_environment_tolerance = -0.02
+	}
+	
+	upgrades = {
+		building_fuel_sourcer_3
+	}
+	
+	prerequisites = {
+		"tech_alpha_natfuel_sourcing_2"
+	}
+}
+
+building_fuel_sourcer_3 = {
+	base_buildtime = 240
+	
+	cost = {
+		minerals = 90
+		energy = 120
+	}
+	
+	produced_resources = {
+		minerals = 3
+		sr_natural_fuels = 2
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requirement_natural_fuels_deposit"
+			tile = {
+				OR = {
+					has_deposit = "d_rich_natural_fuels_deposit"
+					has_deposit = "d_natural_fuels_deposit"
+					has_deposit = "d_natural_fuels_and_minerals_deposit"
+				}
+			}
+		}		
+	}
+	
+	planet_modifier = {
+		pop_environment_tolerance = -0.03
+	}
+	
+	prerequisites = {
+		"tech_alpha_natfuel_sourcing_3"
+	}
+}
+
+building_fuel_refinery = {
+	base_buildtime = 180
+	planet_unique = yes
+	
+	cost = {
+		minerals = 90
+		energy = 40
+	}
+
+	produced_resources = {
+		sr_natural_fuels = 2
+		minerals = 1
+	}
+	
+	required_resources = {
+		energy = 1
+		sr_ice = 1
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requirement_adjacent_fuel_sourcer"
+			tile = {
+				any_neighboring_tile = {
+					OR = {
+						has_building = "building_fuel_sourcer"
+						has_building = "building_fuel_sourcer_2"
+						has_building = "building_fuel_sourcer_3"
+					}
+				}
+			}
+		}		
+	}
+	
+	planet_modifier = {
+		pop_environment_tolerance = -0.02
+	}
+	
+	upgrades = {
+		building_fuel_refinery_2
+	}
+	
+	prerequisites = {
+		"tech_alpha_natfuel_sourcing_2"
+	}
+}
+
+building_fuel_refinery_2 = {
+	base_buildtime = 180
+	planet_unique = yes
+	
+	cost = {
+		minerals = 90
+		energy = 40
+	}
+
+	produced_resources = {
+		sr_natural_fuels = 3
+		minerals = 2
+	}
+	
+	required_resources = {
+		energy = 2
+		sr_ice = 2
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requirement_adjacent_fuel_sourcer"
+			tile = {
+				any_neighboring_tile = {
+					OR = {
+						has_building = "building_fuel_sourcer"
+						has_building = "building_fuel_sourcer_2"
+						has_building = "building_fuel_sourcer_3"
+					}
+				}
+			}
+		}		
+	}
+	
+	planet_modifier = {
+		pop_environment_tolerance = -0.04
+	}
+	
+	prerequisites = {
+		"tech_alpha_natfuel_sourcing_3"
+	}
+}
+
+building_alpha_fuel_converter = {
+	base_buildtime = 120
+
+	cost = {
+		minerals = 30
+	}
+
+	produced_resources = {
+		energy = 3
+		minerals = 1
+	}
+	
+	required_resources = {
+		sr_natural_fuels = 1
+		sr_h2o = 1
+	}
+	
+	planet_modifier = {
+		pop_environment_tolerance = -0.01
+	}
+	
+	country_modifier = {
+		max_energy = 100
+	}
+	
+	upgrades = {
+		building_alpha_fuel_converter_2
+	}
+}
+
+building_alpha_fuel_converter_2 = {
+	base_buildtime = 150
+
+	cost = {
+		minerals = 50
+	}
+
+	produced_resources = {
+		energy = 5
+		minerals = 2
+	}
+	
+	required_resources = {
+		sr_natural_fuels = 2
+		sr_h2o = 1
+		sr_ice = 1
+	}
+	
+	planet_modifier = {
+		pop_environment_tolerance = -0.02
+	}
+	
+	country_modifier = {
+		max_energy = 150
+	}
+	
+	upgrades = {
+		building_alpha_fuel_converter_3
+	}
+	
+	prerequisites = {
+		"tech_fusion_power"
+	}
+}
+
+building_alpha_fuel_converter_3 = {
+	base_buildtime = 180
+	planet_unique = yes
+
+	cost = {
+		minerals = 75
+	}
+
+	produced_resources = {
+		energy = 8
+		minerals = 3
+		sr_micro_cores = 1
+	}
+	
+	required_resources = {
+		sr_natural_fuels = 3
+		sr_h2o = 1
+		sr_ice = 2
+	}
+	
+	planet_modifier = {
+		pop_environment_tolerance = -0.03
+	}
+	
+	country_modifier = {
+		max_energy = 200
+	}
+	
+	prerequisites = {
+		"tech_alpha_cold_fusion"
+	}
+}

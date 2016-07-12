@@ -1,0 +1,243 @@
+#############
+#	COST	#
+#############
+
+@cost_6S = 10
+@cost_6M = 20
+@cost_6L = 40
+
+@cost_7S = 20
+@cost_7M = 40
+@cost_7L = 80
+
+@cost_8S = 30
+@cost_8M = 60
+@cost_8L = 120
+
+@cost_9S = 40
+@cost_9M = 80
+@cost_9L = 160
+
+#############
+#	HEALTH	#
+#############
+
+@hp_1S = 75
+@hp_1M = 150
+@hp_1L = 300
+
+@hp_2S = 100
+@hp_2M = 200
+@hp_2L = 400
+
+@hp_3S = 225
+@hp_3M = 450
+@hp_3L = 900
+
+@hp_4S = 350
+@hp_4M = 700
+@hp_4L = 1400
+
+@hp_5S = 475
+@hp_5M = 950
+@hp_5L = 1900
+
+# ####################
+#  plating mods
+# ####################
+
+# Crystal-Forged Plating II
+utility_component_template = {
+	key = "C_SMALL_CRYSTAL_ARMOR_3"
+	size = small
+	icon = "GFX_C_ship_part_crystal_armor_3"
+	icon_frame = 1
+	power = 0
+	cost = @cost_6S
+	
+	modifier = {
+		ship_hitpoints_add = @hp_2S
+	}
+	
+	prerequisites = { "tech_c_crystal_armor_3" }
+	component_set = "C_CRYSTAL_ARMOR_3"
+}
+
+utility_component_template = {
+	key = "C_MEDIUM_CRYSTAL_ARMOR_3"
+	size = medium
+	icon = "GFX_C_ship_part_crystal_armor_3"
+	icon_frame = 1
+	power = 0
+	cost = @cost_6M
+	
+	modifier = {
+		ship_hitpoints_add = @hp_2M
+	}
+	
+	prerequisites = { "tech_c_crystal_armor_3" }
+	component_set = "C_CRYSTAL_ARMOR_3"
+}
+
+utility_component_template = {
+	key = "C_LARGE_CRYSTAL_ARMOR_3"
+	size = large
+	icon = "GFX_C_ship_part_crystal_armor_3"
+	icon_frame = 1
+	power = 0
+	cost = @cost_6L
+	
+	modifier = {
+		ship_hitpoints_add = @hp_2L
+	}
+	
+	prerequisites = { "tech_c_crystal_armor_3" }
+	component_set = "C_CRYSTAL_ARMOR_3"
+}
+
+# Crystal-Forged Plating III
+utility_component_template = {
+	key = "C_SMALL_CRYSTAL_ARMOR_4"
+	size = small
+	icon = "GFX_C_ship_part_crystal_armor_4"
+	icon_frame = 1
+	power = 0
+	cost = @cost_7S
+	
+	modifier = {
+		ship_hitpoints_add = @hp_3S
+	}
+	
+	prerequisites = { "tech_c_crystal_armor_4" }
+	component_set = "C_CRYSTAL_ARMOR_4"
+}
+
+utility_component_template = {
+	key = "C_MEDIUM_CRYSTAL_ARMOR_4"
+	size = medium
+	icon = "GFX_C_ship_part_crystal_armor_4"
+	icon_frame = 1
+	power = 0
+	cost = @cost_7M
+	
+	modifier = {
+		ship_hitpoints_add = @hp_3M
+	}
+	
+	prerequisites = { "tech_c_crystal_armor_4" }
+	component_set = "C_CRYSTAL_ARMOR_4"
+}
+
+utility_component_template = {
+	key = "C_LARGE_CRYSTAL_ARMOR_4"
+	size = large
+	icon = "GFX_C_ship_part_crystal_armor_4"
+	icon_frame = 1
+	power = 0
+	cost = @cost_7L
+	
+	modifier = {
+		ship_hitpoints_add = @hp_3L
+	}
+	
+	prerequisites = { "tech_c_crystal_armor_4" }
+	component_set = "C_CRYSTAL_ARMOR_4"
+}
+
+# Crystal-Forged Plating IV
+utility_component_template = {
+	key = "C_SMALL_CRYSTAL_ARMOR_5"
+	size = small
+	icon = "GFX_C_ship_part_crystal_armor_5"
+	icon_frame = 1
+	power = 0
+	cost = @cost_8S
+	
+	modifier = {
+		ship_hitpoints_add = @hp_4S
+	}
+	
+	prerequisites = { "tech_c_crystal_armor_5" }
+	component_set = "C_CRYSTAL_ARMOR_5"
+}
+
+utility_component_template = {
+	key = "C_MEDIUM_CRYSTAL_ARMOR_5"
+	size = medium
+	icon = "GFX_C_ship_part_crystal_armor_5"
+	icon_frame = 1
+	power = 0
+	cost = @cost_8M
+	
+	modifier = {
+		ship_hitpoints_add = @hp_4M
+	}
+	
+	prerequisites = { "tech_c_crystal_armor_5" }
+	component_set = "C_CRYSTAL_ARMOR_5"
+}
+
+utility_component_template = {
+	key = "C_LARGE_CRYSTAL_ARMOR_5"
+	size = large
+	icon = "GFX_C_ship_part_crystal_armor_5"
+	icon_frame = 1
+	power = 0
+	cost = @cost_8L
+	
+	modifier = {
+		ship_hitpoints_add = @hp_4L
+	}
+	
+	prerequisites = { "tech_c_crystal_armor_5" }
+	component_set = "C_CRYSTAL_ARMOR_5"
+}
+
+# Crystal-Forged Plating V
+utility_component_template = {
+	key = "C_SMALL_CRYSTAL_ARMOR_6"
+	size = small
+	icon = "GFX_C_ship_part_crystal_armor_6"
+	icon_frame = 1
+	power = 0
+	cost = @cost_9S
+	
+	modifier = {
+		ship_hitpoints_add = @hp_5S
+	}
+	
+	prerequisites = { "tech_c_crystal_armor_6" }
+	component_set = "C_CRYSTAL_ARMOR_6"
+}
+
+utility_component_template = {
+	key = "C_MEDIUM_CRYSTAL_ARMOR_6"
+	size = medium
+	icon = "GFX_C_ship_part_crystal_armor_6"
+	icon_frame = 1
+	power = 0
+	cost = @cost_9M
+	
+	modifier = {
+		ship_hitpoints_add = @hp_5M
+	}
+	
+	prerequisites = { "tech_c_crystal_armor_6" }
+	component_set = "C_CRYSTAL_ARMOR_6"
+}
+
+utility_component_template = {
+	key = "C_LARGE_CRYSTAL_ARMOR_6"
+	size = large
+	icon = "GFX_C_ship_part_crystal_armor_6"
+	icon_frame = 1
+	power = 0
+	cost = @cost_9L
+	
+	modifier = {
+		ship_hitpoints_add = @hp_5L
+	}
+	
+	prerequisites = { "tech_c_crystal_armor_6" }
+	component_set = "C_CRYSTAL_ARMOR_6"
+}

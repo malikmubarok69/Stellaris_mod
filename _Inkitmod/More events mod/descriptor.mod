@@ -1,0 +1,5 @@
+name="More Events Mod"
+archive="more_events_mod.zip"
+picture="thumbnail.jpg"
+remote_file_id="690089574"
+supported_version="1.1.0"

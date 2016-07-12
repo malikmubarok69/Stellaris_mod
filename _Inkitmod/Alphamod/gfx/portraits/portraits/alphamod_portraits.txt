@@ -1,0 +1,11 @@
+portraits = {
+	farming_droid = {	
+		texturefile = "gfx/alphamod_models/farming_droid.dds"	
+		greeting_sound = "mammalian_01_greetings"
+	}
+	
+	integrated_droid = {	
+		texturefile = "gfx/alphamod_models/integrated_droid.dds"	
+		greeting_sound = "mammalian_01_greetings"
+	}
+}

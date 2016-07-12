@@ -1,0 +1,65 @@
+﻿l_german:
+
+ sm_solar_panel_network2:0 "Mittleres Solarkollektor-Netzwerk"
+  
+ sm_solar_panel_network3:0 "Großes Solarkollektor-Netzwerk"
+  
+ sm_solar_panel_network4:0 "Riesiges Solarkollektor-Netzwerk"
+  
+ sm_hydroponic_farms2:0 "Mittlere Orbital-Hydrokulturfarm"
+  
+ sm_hydroponic_farms3:0 "Große Orbital-Hydrokulturfarm"
+  
+ sm_hydroponic_farms4:0 "Riesige Orbital-Hydrokulturfarm"
+  
+ sm_corvette_assembly_yards2:0 "Verbesserte Korvetten-Werft"
+  
+ sm_destroyer_assembly_yards2:0 "Verbesserte Zerstörer-Werft"
+  
+ sm_cruiser_assembly_yards2:0 "Verbesserte Kreuzer-Werft"
+ 
+ sm_battleship_assembly_yards_2:0 "Verbesserte Schlachtschiff-Werft"
+ 
+ sm_synchronized_defenses_2:0 "Verbesserte synchrone Verteidigung"
+  
+ sm_synchronized_defenses_3:0 "Fortschrittliche synchrone Verteidigung"
+ 
+ sm_engineering_bay_2:0 "Fortschrittliche Maschinenbauhalle"
+ 
+ sm_ship_assembly_yards:0 "Kleine Montagewerft"
+ 
+ sm_ship_assembly_yards_2:0 "Mittlere Montagewerft"
+ 
+ sm_ship_assembly_yards_3:0 "Große Montagewerft"
+ 
+ sm_ship_assembly_yards_4:0 "Riesige Montagewerft"
+ 
+ sm_crew_quarters_2:0 "Fortschrittliche Besatzungsquartiere" 
+ 
+ sm_reinforced_hull_1:0 "Hüllenverstärkung" 
+ 
+ sm_reinforced_hull_2:0 "Verbesserte Hüllenverstärkung" 
+ 
+ sm_reinforced_hull_3:0 "Fortschrittliche Hüllenverstärkung" 
+
+ tech_synchronized_defences_2:0 "Verbesserte Synchronisierte Verteidigung"
+ tech_synchronized_defences_2_desc:0 "Die Überarbeitung der Verwendungsschemata defensiver und offensiver Bewaffnung erlaubt eine Steigerung der Effizenz."
+ 
+ tech_reinforced_hull_1:0 "Hüllenverstärkung"
+ tech_reinforced_hull_1_desc:0 "Die Verstärkung der Hülle eines Raumhafens verstärkt seinen Widerstand im Falle eines Angriffs."
+ 
+ tech_reinforced_hull_2:0 "Verbesserte Verstärkte Hülle"
+ tech_reinforced_hull_2_desc:0 "Zusätzliche Verstärkung der Hülle eines Raumhafens verstärkt seinen Widerstand im Falle eines Angriffs bedeutend."
+ 
+ tech_battleship_yard_2:0 "Fortschrittliche Schlachtschiff-Standards"
+ tech_battleship_yard_2_desc:0 "Die Etablierung erweiterter Standards für den Entwurf und den Bau gewaltiger Schlachtschiffe verkürzt die Montagedauer dieser Schiffe deutlich.\n\n"
+ 
+ tech_orbital_hydroponics_2:0 "Fortschrittliche Orbital-Hydrokultur"
+ tech_orbital_hydroponics_2_desc:0 "Die Herausforderungen bei der Kultivierung von Feldfrüchten in der Schwerelosigkeit sind ziemlich einzigartig, aber nicht unüberwindbar.\n\n"
+ 
+ tech_solar_panel_network_2:0 "Fortschrittliche Orbital-Energieumwandlung"
+ tech_solar_panel_network_2_desc:0 "Verbesserungen in der Solartechnik können die Unterhaltskosten von Raumhäfen potentiell weiter reduzieren. Diese Technik benötigt jedoch einen weiteren Modulplatz im Raumhafen.\n\n"
+ 
+ 
+	
+	

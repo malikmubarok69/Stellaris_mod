@@ -1,0 +1,307 @@
+@hit2 = 2
+@hit3 = 4
+@hit4 = 6
+
+@sensor1 = 20
+@sensor2 = 30
+@sensor3 = 40
+@sensor4 = 50
+@sensor5 = 60
+@sensor6 = 70
+@sensor7 = 80
+@sensor8 = 90
+@sensor9 = 100
+@sensor10 = 120
+
+@range5 = 0.05
+@range6 = 0.07
+@range7 = 0.09
+@range8 = 0.11
+@range9 = 0.13
+@range10 = 0.15
+
+@power5 = -20
+@power6 = -25
+@power7 = -30
+@power8 = -35
+@power9 = -40
+@power10 = -45
+
+@cost5 = 15
+@cost6 = 20
+@cost7 = 25
+@cost8 = 30
+@cost9 = 35
+@cost10 = 40
+
+# ##################
+# Ship Sensors
+# ##################
+
+utility_component_template = {
+	key = "C_SHIP_SENSOR_5"
+	size = medium
+	icon = "GFX_C_ship_part_sensor_5"
+	icon_frame = 1
+	power = @power5
+	cost = @cost5
+	sensor_range = @sensor5
+	
+	ship_modifier = {
+		ship_accuracy_add = @hit4
+		ship_weapon_range_mult = @range5
+	}
+	
+	prerequisites = { "tech_c_sensors_5" }
+	component_set = "ship_sensor_components"
+	
+	ai_weight = {
+		weight = 10000
+	}	
+}
+
+utility_component_template = {
+	key = "C_SHIP_SENSOR_6"
+	size = medium
+	icon = "GFX_C_ship_part_sensor_6"
+	icon_frame = 1
+	power = @power6
+	cost = @cost6
+	sensor_range = @sensor6
+	
+	ship_modifier = {
+		ship_accuracy_add = @hit4
+		ship_weapon_range_mult = @range6
+	}
+	
+	prerequisites = { "tech_c_sensors_6" }
+	component_set = "ship_sensor_components"
+	
+	ai_weight = {
+		weight = 20000
+	}	
+}
+
+utility_component_template = {
+	key = "C_SHIP_SENSOR_7"
+	size = medium
+	icon = "GFX_C_ship_part_sensor_7"
+	icon_frame = 1
+	power = @power7
+	cost = @cost7
+	sensor_range = @sensor7
+	
+	ship_modifier = {
+		ship_accuracy_add = @hit4
+		ship_weapon_range_mult = @range7
+	}
+	
+	prerequisites = { "tech_c_sensors_7" }
+	component_set = "ship_sensor_components"
+	
+	ai_weight = {
+		weight = 30000
+	}	
+}
+
+utility_component_template = {
+	key = "C_SHIP_SENSOR_8"
+	size = medium
+	icon = "GFX_C_ship_part_sensor_8"
+	icon_frame = 1
+	power = @power8
+	cost = @cost8
+	sensor_range = @sensor8
+	
+	ship_modifier = {
+		ship_accuracy_add = @hit4
+		ship_weapon_range_mult = @range8
+	}
+	
+	prerequisites = { "tech_c_sensors_8" }
+	component_set = "ship_sensor_components"
+	
+	ai_weight = {
+		weight = 40000
+	}	
+}
+
+utility_component_template = {
+	key = "C_SHIP_SENSOR_9"
+	size = medium
+	icon = "GFX_C_ship_part_sensor_9"
+	icon_frame = 1
+	power = @power9
+	cost = @cost9
+	sensor_range = @sensor9
+	
+	ship_modifier = {
+		ship_accuracy_add = @hit4
+		ship_weapon_range_mult = @range9
+	}
+	
+	prerequisites = { "tech_c_sensors_9" }
+	component_set = "ship_sensor_components"
+	
+	ai_weight = {
+		weight = 50000
+	}	
+}
+
+utility_component_template = {
+	key = "C_SHIP_SENSOR_10"
+	size = medium
+	icon = "GFX_C_ship_part_sensor_10"
+	icon_frame = 1
+	power = @power10
+	cost = @cost10
+	sensor_range = @sensor10
+	
+	ship_modifier = {
+		ship_accuracy_add = @hit4
+		ship_weapon_range_mult = @range10
+	}
+	
+	prerequisites = { "tech_c_sensors_10" }
+	component_set = "ship_sensor_components"
+	
+	ai_weight = {
+		weight = 60000
+	}	
+}
+
+# ##################
+# station Sensors
+# ##################
+
+utility_component_template = {
+	key = "C_SHIP_SENSOR_5"
+	size = medium
+	icon = "GFX_C_ship_part_sensor_5"
+	icon_frame = 1
+	power = @power5
+	cost = @cost5
+	sensor_range = @sensor5
+	
+	ship_modifier = {
+		ship_accuracy_add = @hit4
+		ship_weapon_range_mult = @range5
+	}
+	
+	prerequisites = { "tech_c_sensors_5" }
+	component_set = "station_sensor_components"
+	
+	ai_weight = {
+		weight = 10000
+	}	
+}
+
+utility_component_template = {
+	key = "C_SHIP_SENSOR_6"
+	size = medium
+	icon = "GFX_C_ship_part_sensor_6"
+	icon_frame = 1
+	power = @power6
+	cost = @cost6
+	sensor_range = @sensor6
+	
+	ship_modifier = {
+		ship_accuracy_add = @hit4
+		ship_weapon_range_mult = @range6
+	}
+	
+	prerequisites = { "tech_c_sensors_6" }
+	component_set = "station_sensor_components"
+	
+	ai_weight = {
+		weight = 20000
+	}	
+}
+
+utility_component_template = {
+	key = "C_SHIP_SENSOR_7"
+	size = medium
+	icon = "GFX_C_ship_part_sensor_7"
+	icon_frame = 1
+	power = @power7
+	cost = @cost7
+	sensor_range = @sensor7
+	
+	ship_modifier = {
+		ship_accuracy_add = @hit4
+		ship_weapon_range_mult = @range7
+	}
+	
+	prerequisites = { "tech_c_sensors_7" }
+	component_set = "station_sensor_components"
+	
+	ai_weight = {
+		weight = 30000
+	}	
+}
+
+utility_component_template = {
+	key = "C_SHIP_SENSOR_8"
+	size = medium
+	icon = "GFX_C_ship_part_sensor_8"
+	icon_frame = 1
+	power = @power8
+	cost = @cost8
+	sensor_range = @sensor8
+	
+	ship_modifier = {
+		ship_accuracy_add = @hit4
+		ship_weapon_range_mult = @range8
+	}
+	
+	prerequisites = { "tech_c_sensors_8" }
+	component_set = "station_sensor_components"
+	
+	ai_weight = {
+		weight = 40000
+	}	
+}
+
+utility_component_template = {
+	key = "C_SHIP_SENSOR_9"
+	size = medium
+	icon = "GFX_C_ship_part_sensor_9"
+	icon_frame = 1
+	power = @power9
+	cost = @cost9
+	sensor_range = @sensor9
+	
+	ship_modifier = {
+		ship_accuracy_add = @hit4
+		ship_weapon_range_mult = @range9
+	}
+	
+	prerequisites = { "tech_c_sensors_9" }
+	component_set = "station_sensor_components"
+	
+	ai_weight = {
+		weight = 50000
+	}	
+}
+
+utility_component_template = {
+	key = "C_SHIP_SENSOR_10"
+	size = medium
+	icon = "GFX_C_ship_part_sensor_10"
+	icon_frame = 1
+	power = @power10
+	cost = @cost10
+	sensor_range = @sensor10
+	
+	ship_modifier = {
+		ship_accuracy_add = @hit4
+		ship_weapon_range_mult = @range10
+	}
+	
+	prerequisites = { "tech_c_sensors_10" }
+	component_set = "station_sensor_components"
+	
+	ai_weight = {
+		weight = 60000
+	}	
+}

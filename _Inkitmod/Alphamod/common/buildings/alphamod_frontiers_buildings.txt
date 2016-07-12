@@ -1,0 +1,228 @@
+building_tradestation = {
+	base_buildtime = 180
+	planet_unique = yes
+	
+	cost = {
+		minerals = 150
+		energy = 150
+		influence = 20
+	}
+	
+	required_resources = {
+		minerals = 5
+	}
+	
+	potential = {
+		planet = {
+			NOT = { has_modifier = "capital" }
+		}	
+	}
+	
+	upgrades = {
+		building_trade_company
+	}
+	
+	produced_resources = {
+		minerals = 1
+		food = 1
+		sr_tradegoods = 1
+	}
+
+	adjacency_bonus = {
+		resource_energy_add = 1
+	}
+	
+	planet_modifier = {
+		pop_happiness = 0.05
+	}
+
+	prerequisites = {
+		"tech_trade_ports"
+	}
+	
+	ai_special_building = yes
+}
+
+building_trade_company = {
+	base_buildtime = 360
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 250
+		energy = 200
+		influence = 25
+	}
+	
+	produced_resources = {
+		sr_tradegoods = 1
+		sr_luxuries = 1
+		minerals = 3
+	}
+
+	adjacency_bonus = {
+		resource_energy_add = 1
+		resource_minerals_add = 2
+	}
+	
+	planet_modifier = {
+		pop_happiness = 0.05
+	}
+
+	prerequisites = {
+		"tech_merchant_companies"
+	}
+}
+
+building_frontier_brewery = {
+	base_buildtime = 180
+	planet_unique = yes
+	
+	cost = {
+		minerals = 50
+		energy = 100
+		influence = 10
+	}
+	
+	required_resources = {
+		energy = 1
+		sr_h2o = 2
+	}
+	
+	potential = {
+		planet = {
+			NOT = { has_modifier = "capital" }
+		}	
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_pops_4"
+			planet = {
+				count_pops = {
+					count > 3
+					limit = {
+						is_colony_pop = yes
+					}
+				}
+			}
+		}		
+	}
+	
+	produced_resources = {
+		sr_synthehol = 2
+	}
+	
+	planet_modifier = {
+		pop_happiness = 0.05
+		pop_ethic_shift = 0.05
+	}
+
+	prerequisites = {
+		"tech_space_recreation"
+	}
+}
+
+building_frontier_town = {
+	base_buildtime = 180
+	
+	cost = {
+		minerals = 75
+		energy = 25
+	}
+	
+	required_resources = {
+		energy = 1
+		sr_nutrient_rations = 1
+		sr_h2o = 2
+	}
+	
+	upgrades = {
+		building_frontier_city
+	}
+	
+	potential = {
+		planet = {
+			NOT = { has_modifier = "capital" }
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_pops_4"
+			planet = {
+				count_pops = {
+					count > 3
+					limit = {
+						is_colony_pop = yes
+					}
+				}
+			}
+		}
+	}
+	
+	produced_resources = {
+		minerals = 1
+		food = 1
+	}
+	
+	adjacency_bonus = {
+		resource_minerals_add = 1
+		resource_food_add = 1
+	}
+
+	planet_modifier = {	
+		planet_migration_all_pull = 0.05
+		pop_happiness = 0.05
+	}
+
+	prerequisites = {
+		"tech_frontier_trade_alpha"
+	}
+}
+
+building_frontier_city = {
+	base_buildtime = 360
+	is_listed = no
+	
+	cost = {
+		minerals = 200
+		energy = 100
+	}
+	
+	upgrades = {
+		building_hive
+		building_sprawl
+		building_great_citadel
+		building_great_order
+		building_great_sanctuary
+		building_arcology
+		building_retreat
+		building_culture		
+	}
+	
+	required_resources = {
+		energy = 2
+		sr_nutrient_rations = 1
+		sr_h2o = 3
+	}
+
+	produced_resources = {
+		minerals = 2
+		food = 2
+	}
+	
+	adjacency_bonus = {
+		resource_minerals_add = 2
+		resource_food_add = 1
+	}
+
+	planet_modifier = {	
+		planet_migration_all_pull = 0.1
+		pop_happiness = 0.05
+	}
+
+	prerequisites = {
+		"tech_frontier_growth_alpha"
+	}
+}

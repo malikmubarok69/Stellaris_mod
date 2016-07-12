@@ -1,0 +1,488 @@
+building_large_city = {
+	base_buildtime = 1
+	is_listed = no
+	
+	cost = {
+	}
+	
+	upgrades = {
+		building_hive
+		building_sprawl
+		building_great_citadel
+		building_great_order
+		building_great_sanctuary
+		building_arcology
+		building_retreat
+		building_culture		
+	}
+	
+	produced_resources = {
+		minerals = 1
+		energy = 1
+	}
+	
+	adjacency_bonus = {
+		resource_energy_add = 1
+		resource_minerals_add = 1
+		resource_food_add = 1
+	}
+	
+	planet_modifier = {
+		pop_ethic_shift = 0.05
+		pop_growth_req_mult = -0.10
+		tile_resource_energy_mult = 0.1
+		tile_resource_minerals_mult = 0.1
+		tile_resource_food_mult = 0.1
+	}
+}
+
+building_hive = {
+	base_buildtime = 720
+	is_listed = no
+	
+	cost = {
+		minerals = 250
+		energy = 100
+	}
+	
+	required_resources = {
+		energy = 2
+		sr_h2o = 3
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_pops_10"
+			planet = {
+				count_pops = {
+					count > 9
+					limit = {
+						is_colony_pop = yes
+					}
+				}
+			}
+		}		
+	}
+	
+	produced_resources = {
+		minerals = 10
+		food = 5
+		influence = 0.1
+	}
+	
+	adjacency_bonus = {
+		resource_minerals_add = 1
+		resource_food_add = 2
+	}
+
+	planet_modifier = {	
+		building_time_mult = -0.1
+		planet_migration_all_pull = 0.1
+		pop_growth_req_mult = -0.1
+		pop_food_req_mult = -0.05
+	}
+	
+	prerequisites = {
+		"tech_alpha_hives"
+	}
+}
+
+building_sprawl = {
+	base_buildtime = 720
+	is_listed = no
+	
+	cost = {
+		minerals = 350
+		energy = 200
+	}
+	
+	required_resources = {
+		sr_tradegoods = 1
+		sr_synthehol = 1
+		sr_h2o = 3
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_pops_10"
+			planet = {
+				count_pops = {
+					count > 9
+					limit = {
+						is_colony_pop = yes
+					}
+				}
+			}
+		}		
+	}
+	
+	produced_resources = {
+		minerals = 2
+		energy = 10
+		food = 4
+	}
+	
+	adjacency_bonus = {
+		resource_minerals_add = 1
+		resource_energy_add = 1
+	}
+
+	planet_modifier = {	
+		building_time_mult = -0.05
+		pop_growth_req_mult = -0.1
+		planet_army_build_speed_mult = 0.10
+		pop_ethic_shift = 0.02
+	}
+	
+	prerequisites = {
+		"tech_alpha_sprawls"
+	}
+}
+
+building_sprawl_district = {
+	base_buildtime = 720
+	
+	cost = {
+		minerals = 300
+		energy = 200
+	}
+	
+	required_resources = {
+		sr_h2o = 3
+	}
+	
+	potential = {
+		tile = {
+			any_neighboring_tile = {
+				OR = {
+					has_building = "building_sprawl"
+					has_building = "building_sprawl_district"
+				}
+			}
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_pops_10"
+			planet = {
+				count_pops = {
+					count > 9
+					limit = {
+						is_colony_pop = yes
+					}
+				}
+			}
+		}		
+	}
+	
+	produced_resources = {
+		minerals = 2
+		energy = 6
+		food = 1
+	}
+	
+	adjacency_bonus = {
+		resource_minerals_add = 1
+		resource_energy_add = 1
+	}
+
+	planet_modifier = {	
+		building_time_mult = -0.01
+		pop_growth_req_mult = -0.02
+		planet_army_build_speed_mult = 0.02
+		pop_ethic_shift = 0.01
+	}
+	
+	prerequisites = {
+		"tech_alpha_sprawls"
+	}
+}
+
+building_retreat = {
+	base_buildtime = 720
+	is_listed = no
+	
+	cost = {
+		minerals = 300
+		energy = 200
+	}
+	
+	required_resources = {
+		energy = 1
+		sr_h2o = 2
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_pops_10"
+			planet = {
+				count_pops = {
+					count > 9
+					limit = {
+						is_colony_pop = yes
+					}
+				}
+			}
+		}		
+	}
+	
+	produced_resources = {
+		food = 5
+		influence = 0.25
+	}
+	
+	adjacency_bonus = {
+		resource_food_add = 2
+	}
+
+	planet_modifier = {	
+		planet_migration_all_pull = -0.2
+		pop_happiness = 0.1
+		pop_growth_req_mult = -0.1
+		planet_fortification_strength = 0.25
+	}
+	
+	prerequisites = {
+		"tech_alpha_retreats"
+	}
+}
+
+building_culture = {
+	base_buildtime = 720
+	is_listed = no
+	
+	cost = {
+		minerals = 300
+		energy = 200
+	}
+	
+	required_resources = {
+		energy = 3
+		sr_luxuries = 1
+		sr_h2o = 3
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_pops_10"
+			planet = {
+				count_pops = {
+					count > 9
+					limit = {
+						is_colony_pop = yes
+					}
+				}
+			}
+		}		
+	}
+	
+	produced_resources = {
+		food = 3
+		influence = 0.2
+	}
+	
+	adjacency_bonus = {
+		resource_food_add = 2
+	}
+
+	planet_modifier = {	
+		planet_migration_all_pull = 0.25
+		pop_happiness = 0.1
+		pop_other_species_happiness = 0.01
+	}
+	
+	prerequisites = {
+		"tech_alpha_cultures"
+	}
+}
+
+building_great_citadel = {
+	base_buildtime = 720
+	is_listed = no
+	
+	cost = {
+		minerals = 300
+		energy = 200
+	}
+	
+	required_resources = {
+		energy = 2
+		sr_h2o = 2
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_pops_10"
+			planet = {
+				count_pops = {
+					count > 9
+					limit = {
+						is_colony_pop = yes
+					}
+				}
+			}
+		}		
+	}
+	
+	produced_resources = {
+		minerals = 5
+		influence = 0.2
+		food = 2
+	}
+
+	planet_modifier = {	
+		planet_fortification_strength = 0.25
+		planet_army_build_speed_mult = 0.15
+	}
+	
+	prerequisites = {
+		"tech_alpha_citadels"
+	}
+}
+
+building_great_sanctuary = {
+	base_buildtime = 720
+	is_listed = no
+	
+	cost = {
+		minerals = 300
+		energy = 200
+	}
+	
+	required_resources = {
+		energy = 3
+		sr_h2o = 2
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_pops_10"
+			planet = {
+				count_pops = {
+					count > 9
+					limit = {
+						is_colony_pop = yes
+					}
+				}
+			}
+		}		
+	}
+	
+	produced_resources = {
+		food = 5
+		influence = 0.25
+	}
+
+	planet_modifier = {	
+		planet_migration_all_pull = -0.2
+		pop_happiness = 0.1
+		pop_growth_req_mult = -0.1
+		planet_fortification_strength = 0.20
+	}
+	
+	prerequisites = {
+		"tech_alpha_sanctuaries"
+	}
+}
+
+building_great_order = {
+	base_buildtime = 720
+	is_listed = no
+	
+	cost = {
+		minerals = 300
+		energy = 200
+	}
+	
+	required_resources = {
+		energy = 3
+		sr_h2o = 2
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_pops_10"
+			planet = {
+				count_pops = {
+					count > 9
+					limit = {
+						is_colony_pop = yes
+					}
+				}
+			}
+		}		
+	}
+	
+	produced_resources = {
+		influence = 0.25
+		food = 3
+	}
+	
+	adjacency_bonus = {
+		resource_minerals_add = 2
+		resource_food_add = 2
+	}
+
+	planet_modifier = {	
+		pop_ethic_shift = -0.05
+		pop_happiness = 0.1
+		planet_army_build_speed_mult = 0.25
+		planet_border_mult = 0.1
+	}
+	
+	prerequisites = {
+		"tech_alpha_orders"
+	}
+}
+
+building_arcology = {
+	base_buildtime = 720
+	is_listed = no
+	
+	cost = {
+		minerals = 300
+		energy = 200
+	}
+	
+	required_resources = {
+		minerals = 3
+		sr_micro_cores = 1
+		sr_h2o = 2
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_pops_10"
+			planet = {
+				count_pops = {
+					count > 9
+					limit = {
+						is_colony_pop = yes
+					}
+				}
+			}
+		}		
+	}
+	
+	produced_resources = {
+		energy = 12
+		engineering_research = 8
+		physics_research = 8
+	}
+	
+	adjacency_bonus = {
+		resource_engineering_research_add = 2
+		resource_society_research_add = 1
+		resource_physics_research_add = 2
+	}
+	
+	planet_modifier = {	
+		planet_fortification_strength = 0.25
+		pop_ethic_shift = 0.01
+	}
+	
+	prerequisites = {
+		"tech_alpha_arcologies"
+	}
+}

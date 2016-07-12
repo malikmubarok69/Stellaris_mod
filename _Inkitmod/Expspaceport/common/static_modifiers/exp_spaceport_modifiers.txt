@@ -1,0 +1,17 @@
+spaceport_level_1 = {
+}
+
+spaceport_level_2 = {
+}
+
+spaceport_level_3 = {
+}
+
+spaceport_level_4 = {
+}
+
+spaceport_level_5 = {
+}
+
+spaceport_level_6 = {
+}

@@ -1,0 +1,199 @@
+#############
+#	COST	#
+#############
+@cost_L1 = 200
+
+@cost_L2 = 400
+
+@cost_L3 = 800
+
+@cost_L4 = 1600
+
+@cost_L5 = 3200
+
+# Robotic crew
+utility_component_template = {
+	key = "C_LARGE_CREW_1"
+	size = large
+	icon = "GFX_C_ship_part_crew_1"
+	icon_frame = 1
+	power = 0
+	cost = @cost_L1
+	modifier = {
+		ship_shield_hp_mult = 0.05
+		ship_speed_mult = 0.05
+		ship_evasion_mult = 0.05
+	}
+	ship_modifier = {
+		ship_weapon_damage = 0.1
+	}
+	
+	prerequisites = { "tech_c_robot_crew" }
+	component_set = "C_CREW_1"
+}
+
+# Droid crew
+utility_component_template = {
+	key = "C_LARGE_CREW_2"
+	size = large
+	icon = "GFX_C_ship_part_crew_2"
+	icon_frame = 1
+	power = 0
+	cost = @cost_L2
+	modifier = {
+		ship_shield_hp_mult = 0.1
+		ship_speed_mult = 0.1
+		ship_evasion_mult = 0.1
+	}
+	ship_modifier = {
+		ship_weapon_damage = 0.2
+	}
+	
+	prerequisites = { "tech_c_droid_crew" }
+	component_set = "C_CREW_2"
+}
+
+# Synth crew
+utility_component_template = {
+	key = "C_LARGE_CREW_3"
+	size = large
+	icon = "GFX_C_ship_part_crew_3"
+	icon_frame = 1
+	power = 0
+	cost = @cost_L3
+	modifier = {
+		ship_shield_hp_mult = 0.2
+		ship_speed_mult = 0.2
+		ship_evasion_mult = 0.2
+	}
+	ship_modifier = {
+		ship_weapon_damage = 0.3
+	}
+	
+	prerequisites = { "tech_c_synth_crew" }
+	component_set = "C_CREW_3"
+}
+
+# PSI crew
+# 1
+utility_component_template = {
+	key = "C_LARGE_CREW_4"
+	size = large
+	icon = "GFX_C_ship_part_crew_4"
+	icon_frame = 1
+	power = 0
+	cost = @cost_L3
+	modifier = {
+		ship_shield_hp_mult = 0.05
+		ship_evasion_mult = 0.05
+	}
+	ship_modifier = {
+		ship_weapon_damage = 0.1
+		ship_sensor_range_mult = 0.33
+	}
+	
+	prerequisites = { "tech_c_psionic_crew_1" }
+	component_set = "C_CREW_4"
+}
+# 2
+utility_component_template = {
+	key = "C_LARGE_CREW_5"
+	size = large
+	icon = "GFX_C_ship_part_crew_5"
+	icon_frame = 1
+	power = 0
+	cost = @cost_L3
+	modifier = {
+		ship_shield_hp_mult = 0.1
+		ship_evasion_mult = 0.1
+	}
+	ship_modifier = {
+		ship_weapon_damage = 0.2
+		ship_sensor_range_mult = 0.66
+	}
+	
+	prerequisites = { "tech_c_psionic_crew_2" }
+	component_set = "C_CREW_5"
+}
+# 3
+utility_component_template = {
+	key = "C_LARGE_CREW_6"
+	size = large
+	icon = "GFX_C_ship_part_crew_6"
+	icon_frame = 1
+	power = 0
+	cost = @cost_L3
+	modifier = {
+		ship_shield_hp_mult = 0.2
+		ship_evasion_mult = 0.2
+	}
+	ship_modifier = {
+		ship_weapon_damage = 0.3
+		ship_sensor_range_mult = 1.0
+	}
+	
+	prerequisites = { "tech_c_psionic_crew_3" }
+	component_set = "C_CREW_6"
+}
+
+# Clone crew
+# 1
+utility_component_template = {
+	key = "C_LARGE_CREW_7"
+	size = large
+	icon = "GFX_C_ship_part_crew_7"
+	icon_frame = 1
+	power = 0
+	cost = @cost_L3
+	modifier = {
+		ship_shield_hp_mult = 0.05
+		ship_evasion_mult = 0.05
+		ship_upkeep_mult = -0.03
+	}
+	ship_modifier = {
+		ship_weapon_damage = 0.1
+	}
+	
+	prerequisites = { "tech_c_clone_crew_1" }
+	component_set = "C_CREW_7"
+}
+# 2
+utility_component_template = {
+	key = "C_LARGE_CREW_8"
+	size = large
+	icon = "GFX_C_ship_part_crew_8"
+	icon_frame = 1
+	power = 0
+	cost = @cost_L3
+	modifier = {
+		ship_shield_hp_mult = 0.1
+		ship_evasion_mult = 0.1
+		ship_upkeep_mult = -0.06
+	}
+	ship_modifier = {
+		ship_weapon_damage = 0.2
+	}
+	
+	prerequisites = { "tech_c_clone_crew_2" }
+	component_set = "C_CREW_8"
+}
+# 3
+utility_component_template = {
+	key = "C_LARGE_CREW_9"
+	size = large
+	icon = "GFX_C_ship_part_crew_9"
+	icon_frame = 1
+	power = 0
+	cost = @cost_L3
+	modifier = {
+		ship_shield_hp_mult = 0.2
+		ship_evasion_mult = 0.2
+		ship_upkeep_mult = -0.09
+	}
+	ship_modifier = {
+		ship_weapon_damage = 0.3
+	}
+	
+	prerequisites = { "tech_c_clone_crew_3" }
+	component_set = "C_CREW_9"
+}

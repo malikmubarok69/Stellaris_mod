@@ -1,0 +1,42 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ship_part_combat_sensor_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_combat_sensor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_combat_sensor_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_combat_sensor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_combat_sensor_3"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_combat_sensor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_combat_sensor_4"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_combat_sensor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_deep_space_sensor_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_deep_space_sensor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_deep_space_sensor_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_deep_space_sensor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_deep_space_sensor_3"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_deep_space_sensor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_deep_space_sensor_4"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_deep_space_sensor_4.dds"
+	}
+}

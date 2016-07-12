@@ -1,0 +1,12 @@
+﻿l_english:
+
+# Buildings - Strategic Resource
+
+ building_neutronium_factory:0 "Neutronium Manufactory"
+ building_neutronium_factory_desc:0 "Neutronium Manufactories produce ultra-dense plating for use in power plants, improving their output."
+
+ building_satramene_plant:0 "Satramene Infusion Plant"
+ building_satramene_plant_desc:0 "Satramene Infusion Plants introduce minute amounts of soothing Satramene gas into the environment, easing tensions and promoting trust."
+
+ building_zro_diffuser:0 "Zro Diffusion Station"
+ building_zro_diffuser_desc:0 "Zro Diffusion Stations disperse Zro in microscopic quantities, awakening and enhancing latent psionic abilities in our populace."
