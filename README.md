@@ -39,8 +39,7 @@ More Chinese: http://steamcommunity.com/sharedfiles/filedetails/?id=687203571
 * Chinese font  （悦黑）简体中文字库v4.6  http://steamcommunity.com/sharedfiles/filedetails/?id=682681372
 * 1.21版汉化 （3DM汉化包基础）  ``\localisation\*.yml`` http://steamcommunity.com/sharedfiles/filedetails/?id=683978765
 http://steamcommunity.com/sharedfiles/filedetails/?id=687203571
-* Complete Colors  种族设计界面有更多（RGB）可选颜色，注意这个多颜色选择会与其他的冲突，请不要再加载其他增加可选颜色的mod，这个已经是颜色最全的 flags\colors.txt及interface\zCompleteColors.gui
-* 汉语种族随机名  种族设计界面以汉语命名的可选类型，随机汉语船、人名等。 
+* Complete Colors  种族设计界面有更多（RGB）可选颜色，注意这个多颜色选择会与其他的冲突，请不要再加载其他增加可选颜色的mod，这个已经是颜色最全的 flags\colors.txt及interface\zCompleteColors.gui 
 * Color coded pop status icons 彩色的人口状态图标
 * Reduce Aura Graphics 减轻单位光环的视觉效果。
 * Beautiful Battles 中的gfx调整。
@@ -72,6 +71,7 @@ http://steamcommunity.com/sharedfiles/filedetails/?id=687203571
 * +Colony Ship Start 殖民船开局 __morechn已汉化__
 
 ### 综合类
+* -Alphamod 增加了许多资源和建筑的mod。
 * -Civilian Trade __morechn已汉化__
 * -COFH Exp 一个多方面内容的扩展mod。 __morechnperfect已汉化__
 * -Crystallis Ship Modules Expansion 水晶船模块扩展 __morechn已汉化__
