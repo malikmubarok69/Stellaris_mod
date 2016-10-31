@@ -1,3 +1,3 @@
 name="-Alpha mod"
 path="mod/_Inkitmod/Alphamod"
-supported_version="1.2"
+supported_version="1.3"

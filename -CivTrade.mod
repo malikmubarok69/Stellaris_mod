@@ -1,3 +1,3 @@
 name="-Civilian Trade"
 path="mod/_Inkitmod/Civtrade"
-supported_version="1.2"
+supported_version="1.3"
