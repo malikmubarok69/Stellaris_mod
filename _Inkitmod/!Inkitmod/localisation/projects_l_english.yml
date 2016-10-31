@@ -1,9 +1,9 @@
 ﻿l_english:
 
-####################################
-# Special Research Projects
-####################################
-
+ ####################################
+ # Special Research Projects
+ ####################################
+ 
  MIGRATING_FORESTS_1_PROJECT:0 "研究迁移丛林"
  MIGRATING_FORESTS_1_PROJECT_DESC:0 "我们的许多科学家希望通过研究此类外星植物来解决丛林的破坏问题。"
  MIGRATING_FORESTS_2_PROJECT:0 "消灭迁移丛林"
@@ -55,9 +55,9 @@
  GAS_GIANT_LOST_CHABKY:0 "带查比克回家"
  GAS_GIANT_LOST_CHABKY_DESC:0 "达斯纳克殖民者查比克·莱迪想家了，希望回到伯达拉克。我们同意把他送回去。"
  ABANDONED_TERRAFORMING_1_PROJECT:0 "进程继续"
- ABANDONED_TERRAFORMING_1_PROJECT_DESC:0 " [From.GetName]数千年前被一个未知机构进行了部分的地质改造。如今设备还可以在 [From.GetPlanetMoon]上找到，我们的科学家在想办法重启前人的工作。"
+ ABANDONED_TERRAFORMING_1_PROJECT_DESC:0 " [From.GetName]数千年前被一个未知机构进行了部分的地面改造。如今设备还可以在 [From.GetPlanetMoon]上找到，我们的科学家在想办法重启前人的工作。"
  ABANDONED_TERRAFORMING_2_PROJECT:0 "拆卸设备"
- ABANDONED_TERRAFORMING_2_PROJECT_DESC:0 "尽管年岁已长，  [From.GetName]上的地质改造设备还是很先进的。我们的工程师要求允许他们拆除并研究它们，看看我们能从中获得那些科技。"
+ ABANDONED_TERRAFORMING_2_PROJECT_DESC:0 "尽管年岁已长，  [From.GetName]上的地面改造设备还是很先进的。我们的工程师要求允许他们拆除并研究它们，看看我们能从中获得那些科技。"
  MUTANT_STALKER_PROJECT:0 "杀死作恶的野兽"
  MUTANT_STALKER_PROJECT_DESC:0 "一个变种生物正在大闹 [From.GetName]上的殖民地。许多人因此丧生，殖民地希望我们帮助他们猎杀掉它。"
  ORBITAL_DEBRIS_PROJECT:0 "移除轨道残骸"
@@ -110,8 +110,8 @@
  YUHT_ARCHEOLOGY_8_DESC:0 "在 [From.GetName]的轨道上，发现了尤特殖民船的残骸。一队的科学家对其进行探索，会有不错的发现。"
  YUHT_ARCHEOLOGY_9:0 "小行星居住地"
  YUHT_ARCHEOLOGY_9_DESC:0 "小行星 [From.GetName]显然是古老尤特居住地的遗迹。组织一支远征队，派往调查小行星的洞窟，获取更多情报。"
- FIRST_LEAGUE_ARCHEOLOGY_1:0 "海军基地"
- FIRST_LEAGUE_ARCHEOLOGY_1_DESC:0 " [From.GetName]上方有第一联盟海军基地的遗迹。有些碎片不太稳定，无法进行考古作业。"
+ FIRST_LEAGUE_ARCHEOLOGY_1:0 "舰队基地"
+ FIRST_LEAGUE_ARCHEOLOGY_1_DESC:0 " [From.GetName]上方有第一联盟舰队基地的遗迹。有些碎片不太稳定，无法进行考古作业。"
  FIRST_LEAGUE_ARCHEOLOGY_2:0 "被遗弃的巡洋舰"
  FIRST_LEAGUE_ARCHEOLOGY_2_DESC:0 "在 [From.GetName]的运行轨道上，我们发现了一艘第一联盟巡洋舰的船首部分。如果想要了解更多，需要排除登船搜查单位。"
  FIRST_LEAGUE_ARCHEOLOGY_3:0 "汉姆达的家园"
@@ -131,7 +131,7 @@
  FIRST_LEAGUE_ARCHEOLOGY_10:0 "战役残骸"
  FIRST_LEAGUE_ARCHEOLOGY_10_DESC:0 "两百万年前，第一联盟一场大型飞船战斗在 [From.GetName]附近爆发。飞往 [From.GetPlanetMoon]的航道上，还能看到这些战舰的残骸，我们的考古学家建议在附近建立营地。"
  FIRST_LEAGUE_ARCHEOLOGY_11:0 "流放地"
- FIRST_LEAGUE_ARCHEOLOGY_11_DESC:0 "敌方 [From.GetName]的 [From.GetPlanetMoon]是古老第一联盟的流放地，如果建立考古挖掘基地，可以发掘出一些监禁设施。"
+ FIRST_LEAGUE_ARCHEOLOGY_11_DESC:0 "[From.GetName] 的不友善区 [From.GetPlanetMoon]是远古第一联盟的罪犯流放地，如果我们在此建立考古挖掘站，可以发掘出一些监禁设施。"
  FIRST_LEAGUE_ARCHEOLOGY_12:0 "监察哨岗"
  FIRST_LEAGUE_ARCHEOLOGY_12_DESC:0 " [From.GetName]是某个早起青铜时代文明的家园，该文明处在第一联盟的监控下。已找到多个前沿基地。"
  FIRST_LEAGUE_ARCHEOLOGY_13:0 "轨道封锁"
@@ -182,8 +182,8 @@
  CYBREX_ARCHEOLOGY_10_DESC:0 " [From.GetName]上空的轨道上发现了上千外星生物的尸体。他们几乎同时死在赛博雷克斯控制这片区域的时候。"
  CYBREX_ARCHEOLOGY_11:0 "赛博雷克斯研究站"
  CYBREX_ARCHEOLOGY_11_DESC:0 " [From.GetName]的轨道上发现了赛博雷克斯研究工作站组件，其中包含了赛博雷克斯型生物的遗迹。"
-
-
+ 
+ 
  TARBLAC_PROCUREMENT:0 "幻影般的塔布拉克"
  TARBLAC_PROCUREMENT_DESC:0 "在 [This.GetName]的深海世界中，发现了塔布拉克。"
  TASSARGOID_PROCUREMENT:0 "强势的塔萨古德"
@@ -204,8 +204,10 @@
  BOARD_CULT_SHIP_1_DESC:0 "一艘异教徒的船被我们的军队俘获。我们需要登船，招安俘虏，获取智能资源。"
  BOARD_CULT_SHIP_2:0 "登上异教徒的旗舰"
  BOARD_CULT_SHIP_2_DESC:0 "我们俘获了一艘异教徒的旗舰！成功登陆并捕获舰船，需要派出大量队伍。"
+ CULTIST_DEBRIS:0 "邪教徒战舰残骸"
+ CULTIST_DEBRIS_DESC:0 "这群邪教徒看来发展出了某种新武器，追踪他们母基地的行动到这里就中止了。如果我们调查他们的科技，我们或许可以发现邪教徒领袖的下落。"
  SMUGGLER_RAID_PROJECT:0 "奇袭走私基地"
- SMUGGLER_RAID_PROJECT_DESC:0 "走私者在 [From.GetName]表面建立了一个非法前哨站，该地区是一个原始圣殿，在我们的保护范围内。要在走私者对 [From.GetPlanetMoon]当地文明造成永久性伤害之前，清除掉他们。"
+ SMUGGLER_RAID_PROJECT_DESC:0 "走私者在 [From.GetName]表面建立了一个非法哨所，该地区是一个原始圣殿，在我们的保护范围内。要在走私者对 [From.GetPlanetMoon]当地文明造成永久性伤害之前，清除掉他们。"
  ROGUE_BOMBARDMENT_PROJECT:0 "清除流氓机构"
  ROGUE_BOMBARDMENT_PROJECT_DESC:0 "我们对 [From.GetName]进行了强有力的检测行动，终于在一个大城市的郊区，定位到了一处安全屋。需要太空轨道上的舰队，进行定位炮火打击。"
  AVERT_PRIMITIVE_WAR_PROJECT:0 "避免 [From.GetName]发生战争"
@@ -224,16 +226,18 @@
  SYNTH_INFILTRATION_PROJECT_DESC:0 "人造潜入者伪装成 [Root.GetSpeciesNamePlural]在 [Root.GetName]上进行活动。我们需要找到可靠有效的方法辨认他们。"
  CAPTURE_QUEEN:0 "捕获女王"
  CAPTURE_QUEEN_DESC:0 " [queen_system.GetName]星系最近发生了一场太空战，普雷索林女王受重伤，受到折磨，无药可救。这生物仍活着，捕获它会是情报工作的重大成功。"
-
+ 
  ESTABLISH_COMMUNICATIONS:0 "调查 [Prev.From.GetName]"
- ESTABLISH_COMMUNICATIONS_DESC:0 "我们需要了解神秘的外星文明，代号为§Y [Prev.From.GetName]§!。如果他们有语言，我们需要解密，与其建立沟通。"
- INVESTIGATE_SPACE_AMOEBA:0 "调查 [Prev.From.GetName]"
- INVESTIGATE_SPACE_AMOEBA_DESC:0 "我们需要了解神秘的外星文明，代号为§Y [Prev.From.GetName]§!。如果他们有语言，我们需要解密，与其建立沟通。"
- INVESTIGATE_CRYSTALS:0 "调查 [Prev.From.GetName]"
- INVESTIGATE_CRYSTALS_DESC:0 "我们需要了解神秘的外星文明，代号为§Y [Prev.From.GetName]§!。如果他们有语言，我们需要解密，与其建立沟通。"
- INVESTIGATE_DRONES:0 "调查 [Prev.From.GetName]"
- INVESTIGATE_DRONES_DESC:0 "我们需要了解神秘的外星文明，代号为§Y [Prev.From.GetName]§!。如果他们有语言，我们需要解密，与其建立沟通。"
- INVESTIGATE_SPACE_CLOUDS:0 "调查 [Prev.From.GetName]"
- INVESTIGATE_SPACE_CLOUDS_DESC:0 "我们需要了解神秘的外星文明，代号为§Y [Prev.From.GetName]§!。如果他们有语言，我们需要解密，与其建立沟通。"
- INVESTIGATE_TIYANKI:0 "调查 [Prev.From.GetName]"
- INVESTIGATE_TIYANKI_DESC:0 "我们需要了解神秘的外星文明，代号为§Y [Prev.From.GetName]§!。如果他们有语言，我们需要解密，与其建立沟通。"
+ ESTABLISH_COMMUNICATIONS_DESC:1 "我们需要了解神秘的外星文明，代号为§Y [Prev.From.GetName]§!。如果他们有语言，我们需要解密，与其建立沟通。\n\n奖励：£influence  §G影响力§! 或 §S特殊任务§!"
+ INVESTIGATE_SPACE_AMOEBA:0 "$ESTABLISH_COMMUNICATIONS$"
+ INVESTIGATE_SPACE_AMOEBA_DESC:1 "$ESTABLISH_COMMUNICATIONS_DESC$"
+ INVESTIGATE_CRYSTALS:0 "$ESTABLISH_COMMUNICATIONS$"
+ INVESTIGATE_CRYSTALS_DESC:0 "$ESTABLISH_COMMUNICATIONS_DESC$"
+ INVESTIGATE_DRONES:0 "$ESTABLISH_COMMUNICATIONS$"
+ INVESTIGATE_DRONES_DESC:0 "$ESTABLISH_COMMUNICATIONS_DESC$"
+ INVESTIGATE_SPACE_CLOUDS:0 "$ESTABLISH_COMMUNICATIONS$"
+ INVESTIGATE_SPACE_CLOUDS_DESC:0 "$ESTABLISH_COMMUNICATIONS_DESC$"
+ INVESTIGATE_TIYANKI:0 "$ESTABLISH_COMMUNICATIONS$"
+ INVESTIGATE_TIYANKI_DESC:0 "$ESTABLISH_COMMUNICATIONS_DESC$"
+ INVESTIGATE_PIRATES:0 "$ESTABLISH_COMMUNICATIONS$"
+ INVESTIGATE_PIRATES_DESC:0 "$ESTABLISH_COMMUNICATIONS_DESC$"
